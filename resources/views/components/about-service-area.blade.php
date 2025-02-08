@@ -39,7 +39,7 @@
                             <a href="contact.html" class="th-btn style5">Travaillons ensemble</a>
                         </div>
                         <div class="choose-image th-anim">
-                            <img src="/assets/img/normal/choose_img_1.jpg" alt="Expertise">
+                            <img src="/assets/img/about_us/experience.png" alt="Expertise">
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <a href="contact.html" class="th-btn style5">Contactez-nous</a>
                         </div>
                         <div class="choose-image th-anim">
-                            <img src="/assets/img/normal/choose_img_2.jpg" alt="Qualité">
+                            <img src="/assets/img/about_us/qualite.png" alt="Qualité">
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             <a href="contact.html" class="th-btn style5">En savoir plus</a>
                         </div>
                         <div class="choose-image th-anim">
-                            <img src="/assets/img/normal/choose_img_3.jpg" alt="Sécurité">
+                            <img src="/assets/img/about_us/securite.png" alt="Sécurité">
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                             <a href="contact.html" class="th-btn style5">Découvrir nos services</a>
                         </div>
                         <div class="choose-image th-anim">
-                            <img src="/assets/img/normal/choose_img_4.jpg" alt="Innovation">
+                            <img src="/assets/img/about_us/innovation.png" alt="Innovation">
                         </div>
                     </div>
                 </div>

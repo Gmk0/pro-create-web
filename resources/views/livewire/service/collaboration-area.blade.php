@@ -4,7 +4,7 @@ use function Livewire\Volt\{state};
 
 ?>
 
-<div class="space" data-bg-src="/assets/img/bg/appointment_bg_2.jpg">
+<div class="space" data-bg-src="/assets/img/about_us/collabo3.png">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Texte de présentation -->
@@ -46,7 +46,7 @@ use function Livewire\Volt\{state};
                 </div>
 
                 <!-- Formulaire de contact -->
-                <div class="col-xl-6">
+                <div class="col-xl-6 ">
                     <div class="appointment-area-wrapp">
                         <h6 class="title">Remplissez les informations ci-dessous</h6>
                         <form action="mail.php" method="POST" class="appointment-form3 input-smoke ajax-contact">

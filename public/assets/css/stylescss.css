@@ -1,0 +1,110 @@
+
+#article {
+
+    margin: 0 auto;
+
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+
+}
+
+/* Style du texte */
+#article p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/* Style des titres */
+#article h1,
+#article h2,
+#article h3 {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+#article h1 {
+    font-size: 28px;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 8px;
+}
+
+#article h2 {
+    font-size: 24px;
+    border-left: 4px solid #0073e6;
+    padding-left: 8px;
+}
+
+#article h3 {
+    font-size: 20px;
+    color: #0056b3;
+}
+
+/* Style des listes */
+#article ul,
+#article ol {
+    margin: 16px 0;
+    padding-left: 20px;
+}
+
+#article ul {
+    list-style-type: disc;
+}
+
+#article ol {
+    list-style-type: decimal;
+}
+
+#article li {
+    margin-bottom: 8px;
+}
+
+/* Citations */
+#article blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #0073e6;
+    padding-left: 12px;
+    margin: 12px 0;
+}
+
+/* Liens */
+#article a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#article a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+#article img {
+    max-width: 100%;
+    height: auto;
+
+    padding: 4px;
+
+    border-radius: 8px;
+}
+
+/* Code */
+#article pre {
+    background: #1f1e1e;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#article code {
+    font-family: 'Courier New', monospace;
+color: aliceblue;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+
+

@@ -10,7 +10,7 @@
                     <p class="text-white hero-text">Nous transformons vos visions en solutions digitales grâce à une
                         collaboration fiable et une innovation partagée.</p>
                     <div class="btn-group mt-35 justify-content-center justify-content-lg-start">
-                        <a href="services.html" class="th-btn style5">Voir nos services</a>
+                        <a href="{{route('services')}}" class="th-btn style5">Voir nos services</a>
                     </div>
                 </div>
             </div>

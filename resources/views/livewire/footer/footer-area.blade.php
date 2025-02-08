@@ -72,17 +72,17 @@ use function Livewire\Volt\{state};
                             <h3 class="widget_title">Liens rapides</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="services.html">Nos Services</a></li>
-                                    <li><a href="about.html">À propos</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{route('services')}}">Nos Services</a></li>
+                                    <li><a href="{{route('about')}}">À propos</a></li>
+                                    <li><a href="{{route('blog')}}">Blog</a></li>
+                                    <li><a href="{{route('contact')}}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <!-- App Download -->
-                    <div class="col-md-6 col-lg-auto">
+                    <div class="col-md-6 col-lg-auto d-none">
                         <div class="widget widget_offer footer-widget">
                             <h3 class="widget_title">Téléchargez notre application</h3>
                             <div class="download-btn-wrap">
@@ -108,21 +108,22 @@ use function Livewire\Volt\{state};
             <div class="row gy-2 align-items-center">
                 <div class="col-lg-6">
                     <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a
-                            href="home.html">VotreEntreprise</a>. Tous droits réservés.</p>
+                            href="/">PRO-CREATE</a>. Tous droits réservés.</p>
                 </div>
                 <div class="text-center col-lg-6 text-md-end">
                     <ul class="footer-menu">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                        <li><a href="contact.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{{route('services')}}">Services</a></li>
+                        <li><a href="{{route('about')}}">À propos</a></li>
+                        <li><a href="{{route('blog')}}">Blog</a></li>
+                        <li><a href="{{route('contact')}}">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="shape-mockup" data-top="0%" data-left="0%"><img src="/assets/img/shape/footer_shape_1.png" alt="shape">
-    </div>
+</div>
     <div class="shape-mockup d-none d-xl-block" data-top="0%" data-right="0%"><img
-            src="/assets/img/shape/footer_shape_2.png" alt="shape"></div>
-</class>
+            src="/assets/img/shape/footer_shape_2.png" alt="shape">
+        </div>
+    </div>

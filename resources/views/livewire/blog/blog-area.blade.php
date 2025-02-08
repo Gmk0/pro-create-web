@@ -6,11 +6,11 @@ use function Livewire\Volt\{state};
 
 ?>
 
-<div class="overflow-hidden space-bottom" id="blog-sec" data-bg-src="/assets/img/bg/blog_bg_1.jpg">
-    <div class="container">
+<div class="p-6 overflow-hidden space-bottom" id="blog-sec" data-bg-src="/assets/img/blog/blog_bg_1.png">
+    <div class="container ">
         <div class="text-center title-area">
             <span class="sub-title">Derniers Articles</span>
-            <h2 class="text-white sec-title">Découvrez nos dernières actualités et insights</h2>
+            <h2 class="sec-title">Découvrez nos dernières actualités et insights</h2>
         </div>
         <div class="slider-area">
             <div class="swiper th-slider has-shadow" id="blogSlider4"

@@ -49,13 +49,22 @@
         <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
         <!-- Fontawesome Icon -->
         <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+
+        <link rel="stylesheet" href="/css/awcodes/tiptap-editor/tiptap.css">
+
+
         <!-- Magnific Popup -->
         <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
         <!-- Swiper css -->
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
         <!-- datetimepicker -->
         <link rel="stylesheet" href="/assets/css/jquery.datetimepicker.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link
+         rel="stylesheet" href="/assets/css/style.css">
+
+         <link rel="stylesheet" href="/assets/css/stylescss.css">
+
+
         <!-- Theme Custom CSS -->
 
         <title>{{ $title ?? 'Pro create - IT Solution' }}</title>
@@ -72,7 +81,7 @@
         	******************************** -->
 
 
-        <x-loader />
+
         <x-header-mobile />
 
         <!--==============================
@@ -88,6 +97,8 @@
 
         <livewire:footer.footer-area />
 
+        <!-- Scroll To Top -->
+           <x-scroll-top />
         <!--==============================
             All Js File
         ============================== -->
@@ -121,6 +132,7 @@
         <script src="/assets/js/nice-select.min.js"></script>
 
         <script src="/assets/js/smooth-scroll.js"></script>
+        <script src="/js/awcodes/tiptap-editor/components/tiptap.js"></script>
 
         <!-- Main Js File -->
         <script src="/assets/js/main.js"></script>
