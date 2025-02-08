@@ -37,7 +37,7 @@ class User extends Authenticatable implements  FilamentUser
     public function canAccessPanel(Panel $panel): bool
     {
         if ($panel->getId() === 'admin') {
-            return str_ends_with($this->email, '@admin.com') ;
+            return str_ends_with($this->email, '@pro-create-drc.com') ;
         }
         return true;
     }
