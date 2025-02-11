@@ -11,10 +11,8 @@ use App\Http\Middleware\PreventRequestsDuringMaintenance;
 
 // added the middleware but only to this group, the Filament routes are unaffected
 Route::middleware([PreventRequestsDuringMaintenance::class])->group(function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
-});
+
+
 
 
 Volt::route('/', 'home.home');
@@ -31,10 +29,13 @@ Volt::route('/blog/{category}', 'blog.blog-category')->name('blog.category');
 Volt::route('/blog', 'blog.blog-page')->name('blog');
 
 
-Volt::route('/project/details', 'project.project-detail')->name('project.detail');
+Volt::route('/project/{slug}', 'project.project-detail')->name('project.detail');
 
 Volt::route('/project', 'project.project-all')->name('project');
 
-Volt::route('/service/details', 'service.service-details')->name('service.details');
+Volt::route('/services/{slug}', 'service.service-details')->name('service.details');
 
-Volt::route('/service', 'service.service-all-page')->name('services');
+Volt::route('/services', 'service.service-all-page')->name('services');
+});
+
+

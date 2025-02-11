@@ -1,7 +1,7 @@
  <div class="th-hero-wrapper hero-4" id="hero">
         <div class="hero-inner">
-            <div class="th-hero-bg" data-bg-src="/assets/img/hero/1.svg">
-                <img src="/assets/img/hero/1.svg" alt="Image Héros">
+            <div class="th-hero-bg" data-bg-src="/assets/img/hero/1-min.jpg">
+                <img src="/assets/img/hero/1-min.jpg" alt="Image Héros">
             </div>
             <div class="container">
                 <div class="hero-style4">

@@ -24,12 +24,9 @@
 
                                     </li>
 
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Services</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="services.html">Nos Services</a></li>
-                                            <li><a href="details-service.html">Détails Services</a></li>
-                                        </ul>
+                                    <li class="">
+                                        <a href="{{route('services')}}">Services</a>
+
                                     </li>
                                     <li class="">
                                         <a href="{{route('blog')}}">Blog</a>

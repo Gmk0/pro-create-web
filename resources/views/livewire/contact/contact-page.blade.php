@@ -7,98 +7,90 @@ use function Livewire\Volt\{state};
 ?>
 
 <div>
-<div class="breadcumb-wrapper " data-bg-src="/assets/img/bg/breadcumb-bg.jpg">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Contact Us</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="home-web-agency.html">Home</a></li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
+    <x-breadcumb-wrapper title="Contact" />
     <!--==============================
     Contact Area
     ==============================-->
-    <div class="space-top space-extra-bottom">
-        <div class="container">
-            <div class="flex-row-reverse row gy-40">
-                <div class="col-lg-6 col-xl-7">
-                    <form action="mail.php" method="POST" class="contact-form input-smoke ajax-contact">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
-                                <i class="fal fa-user"></i>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Email Address">
-                                <i class="fal fa-envelope"></i>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
-                                <i class="fal fa-phone"></i>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <select name="subject" id="subject" class="form-select nice-select">
-                                    <option value="" disabled selected hidden>Select Service</option>
-                                    <option value="Web Development">Web Development</option>
-                                    <option value="Cyber Security">Cyber Security</option>
-                                    <option value="App Development">App Development</option>
-                                    <option value="Cloud Service">Cloud Service</option>
-                                    <option value="Cloud Service">Cloud Service</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="message" id="message" cols="30" rows="3" class="form-control"
-                                    placeholder="Your Message"></textarea>
-                                <i class="fal fa-pencil"></i>
-                            </div>
-                            <div class="form-btn col-12">
-                                <button class="th-btn">Send Message</button>
-                            </div>
+  <div class="space-top space-extra-bottom">
+    <div class="container">
+        <div class="flex-row-reverse row gy-40">
+            <div class="col-lg-6 col-xl-7">
+                <form action="mail.php" method="POST" class="contact-form input-smoke ajax-contact">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Votre Nom">
+                            <i class="fal fa-user"></i>
                         </div>
-                        <p class="mt-3 mb-0 form-messages"></p>
-                    </form>
-                </div>
-                <div class="col-lg-6 col-xl-5">
-                    <div class="contact-info-wrap">
-                        <div class="mb-10 title-area mt-n2">
-                            <span class="sub-title style1">Contact Us</span>
-                            <h3 class="sec-title">Let’s working together</h3>
-                            <p class="">Thank you for your interest in Attach Web Agency. We're excited to hear from you and
-                                discuss...</p>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Adresse Email">
+                            <i class="fal fa-envelope"></i>
                         </div>
-                        <div class="contact-info">
-                            <div class="contact-info_icon"><i class=""><img src="assets/img/icon/phone.svg" alt=""></i>
-                            </div>
-                            <div class="media-body">
-                                <span class="contact-info_title">Call Us For Query</span><span class="contact-info_text"><a
-                                        href="tel:+58125253158">(+58-125) 25-3158</a></span>
-                            </div>
+                        <div class="form-group col-md-6">
+                            <input type="tel" class="form-control" name="number" id="number"
+                                placeholder="Numéro de Téléphone">
+                            <i class="fal fa-phone"></i>
                         </div>
-                        <div class="contact-info">
-                            <div class="contact-info_icon"><i class=""><img src="assets/img/icon/message.svg" alt=""></i>
-                            </div>
-                            <div class="media-body">
-                                <span class="contact-info_title">Email Anytime</span><span class="contact-info_text"><a
-                                        href="mailto:info@webteck.chat.com">info@webteck.chat.com</a></span>
-                            </div>
+                        <div class="form-group col-md-6">
+                            <select name="subject" id="subject" class="form-select nice-select">
+                                <option value="" disabled selected hidden>Sélectionner un Service</option>
+                                <option value="Développement Web">Développement Web</option>
+                                <option value="Cybersécurité">Cybersécurité</option>
+                                <option value="Développement d'Applications">Développement d'Applications</option>
+                                <option value="Services Cloud">Services Cloud</option>
+                            </select>
                         </div>
-                        <div class="contact-info">
-                            <div class="contact-info_icon"><i class=""><img src="assets/img/icon/location.svg" alt=""></i>
-                            </div>
-                            <div class="media-body">
-                                <span class="contact-info_title">Visit Our Office</span><span class="contact-info_text">15
-                                    Maniel Lane, Front Line Berlin</span>
-                            </div>
+                        <div class="form-group col-12">
+                            <textarea name="message" id="message" cols="30" rows="3" class="form-control"
+                                placeholder="Votre Message"></textarea>
+                            <i class="fal fa-pencil"></i>
+                        </div>
+                        <div class="form-btn col-12">
+                            <button class="th-btn">Envoyer le Message</button>
+                        </div>
+                    </div>
+                    <p class="mt-3 mb-0 form-messages"></p>
+                </form>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+                <div class="contact-info-wrap">
+                    <div class="mb-10 title-area mt-n2">
+                        <span class="sub-title style1">Contactez-nous</span>
+                        <h3 class="sec-title">Travaillons ensemble</h3>
+                        <p class="">Merci pour votre intérêt envers Pro create. Nous sommes ravis de vous
+                            entendre et de discuter...</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info_icon"><i class=""><img src="assets/img/icon/phone.svg" alt=""></i>
+                        </div>
+                        <div class="media-body">
+                            <span class="contact-info_title">Appelez-nous pour toute question</span>
+                            <span class="contact-info_text"><a href="tel:+243813657847">(+243)813657847</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info_icon"><i class=""><img src="assets/img/icon/message.svg" alt=""></i>
+                        </div>
+                        <div class="media-body">
+                            <span class="contact-info_title">Envoyez un email à tout moment</span>
+                            <span class="contact-info_text"><a
+                                    href="mailto:contact@pro-create-drc.com">contact@pro-create-drc.com</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info_icon"><i class=""><img src="assets/img/icon/location.svg" alt=""></i>
+                        </div>
+                        <div class="media-body">
+                            <span class="contact-info_title">Visitez notre bureau</span>
+                            <span class="contact-info_text">15 Maniel Lane, Front Line Berlin</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!--==============================
     Map Area
     ==============================-->

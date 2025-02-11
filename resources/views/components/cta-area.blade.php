@@ -17,7 +17,7 @@
                         <p class="text-white cta-desc text-uppercase">Projets Réalisés</p>
                     </div>
                     <div class="mt-45">
-                        <a href="contact.html" class="th-btn style3">En savoir plus</a>
+                        <a href="{{route('contact')}}" class="th-btn style3">En savoir plus</a>
                     </div>
                 </div>
             </div>

@@ -1,47 +1,43 @@
 <div class="overflow-hidden counter-area space-bottom">
     <div class="container">
         <div class="counter-card-wrap">
-            <!-- Carte 1 -->
+            <!-- Années d’Expérience -->
             <div class="counter-card">
                 <div class="counter-card_icon">
-                    <img src="/assets/img/icon/counter_card_1.svg" alt="Retour sur investissement">
+                    <img src="/assets/img/icon/counter_card_1.svg" alt="Années d’expérience">
                 </div>
                 <div class="media-body">
-                    <h3 class="box-number"><span class="counter-number">20</span>X</h3>
-                    <h6 class="counter-title">Retour sur investissement</h6>
-                    <p class="mb-0 counter-text">Nous multiplions vos performances grâce à nos solutions digitales.
-                    </p>
+                    <h3 class="box-number"><span class="counter-number">5</span>+</h3>
+                    <h6 class="counter-title">Années d’Expérience</h6>
+                    <p class="mb-0 counter-text">Un savoir-faire éprouvé dans le domaine des solutions digitales.</p>
                 </div>
             </div>
             <div class="divider"></div>
 
-            <!-- Carte 2 -->
+            <!-- Projets Livrés -->
             <div class="counter-card">
                 <div class="counter-card_icon">
-                    <img src="/assets/img/icon/counter_card_2.svg" alt="Optimisation de mots-clés">
+                    <img src="/assets/img/icon/counter_card_2.svg" alt="Projets Livrés">
                 </div>
                 <div class="media-body">
-                    <h3 class="box-number"><span class="counter-number">150</span>k+</h3>
-                    <h6 class="counter-title">Optimisation de mots-clés</h6>
-                    <p class="mb-0 counter-text">Des contenus optimisés pour améliorer votre visibilité en ligne.
-                    </p>
+                    <h3 class="box-number"><span class="counter-number">100</span>+</h3>
+                    <h6 class="counter-title">Projets Livrés</h6>
+                    <p class="mb-0 counter-text">Des solutions innovantes adaptées aux besoins de nos clients.</p>
                 </div>
             </div>
             <div class="divider"></div>
 
-            <!-- Carte 3 -->
+            <!-- Clients Actifs -->
             <div class="counter-card">
                 <div class="counter-card_icon">
-                    <img src="/assets/img/icon/counter_card_3.svg" alt="Campagnes réussies">
+                    <img src="/assets/img/icon/counter_card_3.svg" alt="Clients Actifs">
                 </div>
                 <div class="media-body">
-                    <h3 class="box-number"><span class="counter-number">10,000</span>+</h3>
-                    <h6 class="counter-title">Campagnes réussies</h6>
-                    <p class="mb-0 counter-text">Des stratégies sur mesure pour atteindre vos objectifs marketing.
-                    </p>
+                    <h3 class="box-number"><span class="counter-number">20</span>+</h3>
+                    <h6 class="counter-title">Clients Actifs</h6>
+                    <p class="mb-0 counter-text">Des entreprises qui nous font confiance au quotidien.</p>
                 </div>
             </div>
-            <div class="divider"></div>
         </div>
     </div>
 </div>

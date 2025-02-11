@@ -8,67 +8,56 @@ use function Livewire\Volt\{state};
 
 <div>
 
-    <div class="breadcumb-wrapper " data-bg-src="/assets/img/bg/breadcumb-bg.jpg">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">About Us</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="home-web-agency.html">Home</a></li>
-                    <li>About Us</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <x-breadcumb-wrapper title="a propos de nous" />
 
-    <div class="overflow-hidden bg-white about-area4 space" id="about-sec">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6">
-                    <div class="img-box1">
-                        <div class="img1 th-anim global-img">
-                            <img src="assets/img/normal/about_1.jpg" alt="About">
-                        </div>
-                        <div class="img2 th-anim global-img jump">
-                            <img src="assets/img/normal/about_2.jpg" alt="About">
-                        </div>
-                        <div class="about-shape"></div>
+   <div class="overflow-hidden bg-white about-area4 space" id="about-sec">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6">
+                <div class="img-box1">
+                    <div class="img1 th-anim global-img">
+                        <img src="assets/img/normal/about_1.jpg" alt="Équipe IT">
                     </div>
+                    <div class="img2 th-anim global-img jump">
+                        <img src="assets/img/normal/about_2.jpg" alt="Solutions digitales">
+                    </div>
+                    <div class="about-shape"></div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="about-content-area ps-xl-4 ms-xl-2">
-                        <div class="title-area mb-35">
-                            <span class="sub-title">More About Us</span>
-                            <h2 class="sec-title">Make it easy to do your business with us and we are best</h2>
-                            <p class="">Digital agency companies cater to businesses of all sizes and industries, from
-                                startups and small businesses to large enterprises. The objective is to help clients
-                                leverage the power of the internet.</p>
-                        </div>
-                        <div class="about-counter-wrapper">
-                            <div class="th-experience style2">
-                                <div class="th-experience_content">
-                                    <h2 class="experience-year"><span class="counter-number">25</span>+</h2>
-                                    <p class="experience-text">Years Experience</p>
-                                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="about-content-area ps-xl-4 ms-xl-2">
+                    <div class="title-area mb-35">
+                        <span class="sub-title">Notre expertise</span>
+                        <h2 class="sec-title">Simplifiez votre transformation digitale avec notre expertise</h2>
+                        <p class="">Nous accompagnons les entreprises dans leur mutation technologique, des PME aux
+                            grands groupes. Notre objectif : proposer des solutions sur mesure qui accélèrent votre
+                            croissance et sécurisent vos opérations.</p>
+                    </div>
+                    <div class="about-counter-wrapper">
+                        <div class="th-experience style2">
+                            <div class="th-experience_content">
+                                <h2 class="experience-year"><span class="counter-number">5</span>+</h2>
+                                <p class="experience-text">Ans d'expertise</p>
                             </div>
+                        </div>
 
-                            <div class="checklist">
-                                <ul>
-                                    <li>Eamlessly conceptualize go forward total linkage</li>
-                                    <li>Whiteboard multifuional applications rather than</li>
-                                    <li> Applications rather than lived reliable functionale</li>
-                                    <li>Leverage other quality ideas synestic outsourcing</li>
-                                </ul>
-                            </div>
+                        <div class="checklist">
+                            <ul>
+                                <li>Solutions cloud et infrastructure sécurisées</li>
+                                <li>Cybersécurité sur-mesure pour votre activité</li>
+                                <li>Intégration d'ERP et outils de gestion</li>
+                                <li>Automatisation des processus métiers</li>
+                            </ul>
                         </div>
-                        <div class="mt-40 btn-group justify-content-start">
-                            <a href="about.html" class="th-btn">Get Started Now</a>
-                        </div>
+                    </div>
+                    <div class="mt-40 btn-group justify-content-start">
+                        <a href="about.html" class="th-btn">Démarrer maintenant</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+</div>
     <!--==============================
     Counter Area
     ==============================-->
@@ -125,28 +114,30 @@ use function Livewire\Volt\{state};
     <!--==============================
     Video Area
     ==============================-->
-    <div class="space" data-bg-src="assets/img/bg/video_bg_1.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="text-center title-area">
-                        <span class="sub-title">Watch Video</span>
-                        <h2 class="sec-title">We help our clients realize their business ideas and achieve great results
-                        </h2>
-                    </div>
+  <!-- ============================== -->
+<div class="space" data-bg-src="assets/img/bg/video_bg_1.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="text-center title-area">
+                    <span class="sub-title">Regarder la vidéo</span>
+                    <h2 class="sec-title">Nous aidons nos clients à concrétiser leurs idées d'entreprise et à obtenir
+                        d'excellents résultats</h2>
                 </div>
             </div>
-            <div class="video-box1 th-anim">
-                <img src="assets/img/normal/video_1.jpg" alt="video">
-                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
-                        class="fa-sharp fa-solid fa-play"></i></a>
-            </div>
+        </div>
+        <div class="video-box1 th-anim">
+            <img src="assets/img/normal/video_1.jpg" alt="vidéo">
+            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video">
+                <i class="fa-sharp fa-solid fa-play"></i>
+            </a>
         </div>
     </div>
+</div>
     <!--==============================
     Team Area
     ==============================-->
-    <section class="team-area">
+    <section class="team-area d-none">
         <div class="container z-index-common">
             <div class="row justify-content-lg-between justify-content-center align-items-end">
                 <div class="col-xxl-4 col-xl-6">
@@ -298,202 +289,7 @@ use function Livewire\Volt\{state};
     <!--==============================
     Testimonial Area
     ==============================-->
-    <section class="m-4 mt-0 mb-0 overflow-hidden bg-top-center th-radius3 space" id="testi-sec"
-        data-bg-src="assets/img/bg/testimonial_bg_1.jpg">
-        <div class="container th-container2">
-            <div class="row justify-content-lg-between justify-content-center align-items-end">
-                <div class="col-xxl-4 col-xl-6">
-                    <div class="text-center title-area text-lg-start">
-                        <span class="text-white sub-title style1">Customer Feedbacks</span>
-                        <h2 class="text-white sec-title">See what our clients have to say</h2>
-                    </div>
-                </div>
-                <div class="col-lg-auto d-none d-xl-block">
-                    <div class="sec-btn">
-                        <div class="icon-box">
-                            <button data-slider-prev="#testiSlider2" class="slider-arrow style2 default"><i
-                                    class="far fa-arrow-left"></i></button>
-                            <button data-slider-next="#testiSlider2" class="slider-arrow style2 default"><i
-                                    class="far fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="testiSlider2"
-                    data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“Lectus volpat faucibus placerat eget nulla sodales aliquam
-                                    molestie ante, himenaeos fames suscipit arcu cras cenas penatibus vivamus, aenean primis
-                                    enim”</p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_1.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Andrew D. Smith</h3>
-                                            <span class="testi-box_desig">Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“Objectively visualize error-free technology for B2B alignment.
-                                    Monotonectally harness an expanded array of models via effective collaboration in the
-                                    success.”</p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_2.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Brooklyn Simmons</h3>
-                                            <span class="testi-box_desig">CTO of Portfolio</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“Completely drive innovative value whereas out-of-the-box
-                                    paradigms. Interactively pursue stand-alone markets after global say that they
-                                    results..”</p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_3.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Savannah Nguyen</h3>
-                                            <span class="testi-box_desig">CEO at Rimasu</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“The best service reinvent prospective metrics before granular
-                                    schema. Professionally metrics before expedite client-centric or analyzing before
-                                    expedite methods ”</p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_4.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Cameron Williamson</h3>
-                                            <span class="testi-box_desig">Founder CEO</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“I've had the pleasure of working with Webteck for the past year,
-                                    and I can confidently say that they have been instrumental say that they in the
-                                    success.”</p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_2.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Brooklyn Simmons</h3>
-                                            <span class="testi-box_desig">Project Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“Phosfluorescently reinvent prospective metrics before granular
-                                    schema. Professionally metrics before expedite client-centric before expedite methods .”
-                                </p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_3.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Savannah Nguyen</h3>
-                                            <span class="testi-box_desig">Head Manager</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box th-ani">
-                                <div class="testi-box_image">
-                                    <img src="assets/img/testimonial/testi_img_1.png" alt="image">
-                                </div>
-                                <p class="testi-box_text">“If you have specific questions about gathering or analyzing
-                                    customer feedback, or if you're looking for general information or analyzing feel free
-                                    to ask.”</p>
-                                <div class="testi-box_wrapper">
-                                    <div class="testi-box_profile">
-                                        <div class="testi-box_author">
-                                            <img src="assets/img/testimonial/testi_2_1.png" alt="Avater">
-                                        </div>
-                                        <div class="testi-box_info">
-                                            <h3 class="box-title">Cameron Williamson</h3>
-                                            <span class="testi-box_desig">UI/UX Designer</span>
-                                        </div>
-                                    </div>
-                                    <div class="testi-quote">
-                                        <img src="assets/img/icon/quote.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+    @livewire("service.testimonial-area")
 </div>

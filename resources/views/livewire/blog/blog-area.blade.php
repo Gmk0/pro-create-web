@@ -1,8 +1,13 @@
 <?php
 
-use function Livewire\Volt\{state};
+use function Livewire\Volt\{state,with};
 
-//
+
+
+
+with(fn() => [
+    'blogs' => \App\Models\Blog::latest()->paginate(10),
+]);
 
 ?>
 
@@ -17,26 +22,31 @@ use function Livewire\Volt\{state};
                 data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
                 <div class="swiper-wrapper">
                     <!-- Article 1 -->
+
+                    @forelse ($blogs as $blog)
                     <div class="swiper-slide">
                         <div class="blog-box style2">
                             <div class="blog-img">
-                                <img src="/assets/img/blog/blog_4_1.jpg" alt="Image de l'article">
+                                <img width="420" height="260" src="{{$blog->getFirstMediaUrl('blog')}}" alt="Image de l'article">
                             </div>
                             <div class="blog-box_content">
-                                <p class="blog-tag">Transformation Digitale</p>
-                                <h3 class="box-title"><a href="blog-details.html">Comment la transformation digitale
-                                        révolutionne les entreprises</a></h3>
-                                <p class="blog-text">Découvrez les dernières tendances et stratégies pour réussir
-                                    votre transition numérique.</p>
+                                <p class="blog-tag">{{$blog->category->title}}</p>
+                                <h3 class="box-title"><a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}">{{$blog->title}}</a></h3>
+                                <p class="blog-text">{{$blog->description}}.</p>
                                 <div class="blog-meta">
-                                    <span><a href="blog.html"> 5 Janvier 2025</a></span>
+                                    <span><a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}">{{$blog->published_at}}</a></span>
                                     <span>Par <a class="author" href="blog.html">VotreEntreprise</a></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Article 2 -->
+                    @empty
+
+                    @endforelse
+
+
+                   {{-- <!-- Article 2 -->
                     <div class="swiper-slide">
                         <div class="blog-box style2">
                             <div class="blog-img">
@@ -74,7 +84,7 @@ use function Livewire\Volt\{state};
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
 
                     <!-- Ajoutez d'autres articles ici -->
                 </div>

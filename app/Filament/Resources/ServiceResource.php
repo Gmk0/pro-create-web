@@ -12,6 +12,10 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use FilamentTiptapEditor\TiptapEditor;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use FilamentTiptapEditor\Enums\TiptapOutput;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 
 class ServiceResource extends Resource
 {
@@ -25,13 +29,19 @@ class ServiceResource extends Resource
             ->schema([
 
                 Forms\Components\TextInput::make('title')
-                    ->required(),
-            Forms\Components\Textarea::make('description')
-            ->columnSpanFull(),
-                Forms\Components\RichEditor::make('content')
+                ->required(),
+
+                Forms\Components\Textarea::make('description')->columnSpanFull(),
+                TiptapEditor::make('content')
+                ->profile('default')
+                ->output(TiptapOutput::Html) // optional, change the format for saved data, default is html
+                    ->maxContentWidth('5xl')
+                    ->required()
                     ->columnSpanFull(),
-                Forms\Components\FileUpload::make('image_url')
-                    ->image(),
+                SpatieMediaLibraryFileUpload::make('images_url')->collection("services")
+                ->preserveFilenames()
+                    ,
+
             ]);
     }
 

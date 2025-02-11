@@ -1,10 +1,24 @@
+
+
 <?php
+use function Livewire\Volt\{state,with};
 
-use function Livewire\Volt\{state};
 
+
+
+
+
+
+
+with(fn() => [
+    'projects' => \App\Models\Project::latest()->take(6)->get(),
+
+]);
 //
 
 ?>
+
+
 
 
 <div class="overflow-hidden bg-white space">
@@ -16,7 +30,7 @@ use function Livewire\Volt\{state};
                     <h2 class="sec-title">Nos projets qui inspirent confiance</h2>
                 </div>
                 <div class="project-btn">
-                    <a href="projets.html" class="th-btn blue-border">Voir tous les projets</a>
+                    <a href="{{route('project')}}" class="th-btn blue-border">Voir tous les projets</a>
                 </div>
             </div>
             <div class="col-xl-8">
@@ -24,82 +38,38 @@ use function Livewire\Volt\{state};
                     <div class="swiper th-slider has-shadow" id="projectSlider1"
                         data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"}}}'>
                         <div class="swiper-wrapper">
+
+                            @forelse ($projects as $project)
+                            <div class="swiper-slide">
+                                <div class="project-box">
+                                    <div class="project-img">
+                                        <img src="{{$project->getFirstMediaUrl('projects')}}" alt="Projet 1">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="media-body">
+                                            <h3 class="box-title"><a href="{{route('project.detail',['slug'=>$project->slug])}}">{{$project->title}}</a></h3>
+                                            <div class="project-tags">
+
+                                                @forelse ($project->tags as $tag)
+                                                <a href="">{{$tag}}</a>
+
+                                                @empty
+
+                                                @endforelse
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @empty
+
+                            @endforelse
                             <!-- Exemple 1 -->
-                            <div class="swiper-slide">
-                                <div class="project-box">
-                                    <div class="project-img">
-                                        <img src="/assets/img/project/project_2_1.jpg" alt="Projet 1">
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="media-body">
-                                            <h3 class="box-title"><a href="details-projet.html">Transformation
-                                                    Digitale</a></h3>
-                                            <div class="project-tags">
-                                                <a href="details-projet.html">Stratégie</a>
-                                                <a href="details-projet.html">Développement</a>
-                                                <a href="details-projet.html">Résultats</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Exemple 2 -->
-                            <div class="swiper-slide">
-                                <div class="project-box">
-                                    <div class="project-img">
-                                        <img src="/assets/img/project/project_2_2.jpg" alt="Projet 2">
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="media-body">
-                                            <h3 class="box-title"><a href="details-projet.html">Création d'un
-                                                    E-Commerce</a></h3>
-                                            <div class="project-tags">
-                                                <a href="details-projet.html">Design</a>
-                                                <a href="details-projet.html">Solutions Cloud</a>
-                                                <a href="details-projet.html">Paiements Sécurisés</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Exemple 3 -->
-                            <div class="swiper-slide">
-                                <div class="project-box">
-                                    <div class="project-img">
-                                        <img src="/assets/img/project/project_2_3.jpg" alt="Projet 3">
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="media-body">
-                                            <h3 class="box-title"><a href="details-projet.html">Optimisation des
-                                                    Réseaux Sociaux</a></h3>
-                                            <div class="project-tags">
-                                                <a href="details-projet.html">Marketing</a>
-                                                <a href="details-projet.html">Augmentation de la visibilité</a>
-                                                <a href="details-projet.html">Engagement</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Exemple 4 -->
-                            <div class="swiper-slide">
-                                <div class="project-box">
-                                    <div class="project-img">
-                                        <img src="/assets/img/project/project_2_4.jpg" alt="Projet 4">
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="media-body">
-                                            <h3 class="box-title"><a href="details-projet.html">Développement
-                                                    d'Applications Mobiles</a></h3>
-                                            <div class="project-tags">
-                                                <a href="details-projet.html">iOS</a>
-                                                <a href="details-projet.html">Android</a>
-                                                <a href="details-projet.html">Applications sur mesure</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
                     <button data-slider-prev="#projectSlider1" class="slider-arrow slider-prev"><i

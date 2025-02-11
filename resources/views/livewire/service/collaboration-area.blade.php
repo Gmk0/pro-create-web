@@ -23,7 +23,7 @@ use function Livewire\Volt\{state};
                         </div>
                         <div class="media-body">
                             <span class="header-info_label">Appelez-nous au :</span>
-                            <p class="header-info_link"><a href="tel:+1234567890">+123 456 7890</a></p>
+                            <p class="header-info_link"><a href="tel:+1234567890">+243 813757847</a></p>
                         </div>
                     </div>
                     <div class="work-area">

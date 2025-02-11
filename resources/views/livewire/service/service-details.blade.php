@@ -1,23 +1,34 @@
 <?php
 
-use function Livewire\Volt\{state};
+use App\Models\Service;
+use function Livewire\Volt\{mount, state, with};
 
-//
+// Définir les états
+state(['service' => null]);
+
+
+mount(function ($slug) {
+$this->service = Service::where('slug', $slug)->first();
+
+if (is_null($this->service)) {
+return redirect()->route('home');
+}
+
+});
+
+with(fn() => [
+'services' => \App\Models\Service::select('slug','title')->get(),
+]);
+
 
 ?>
 
 <div>
-<div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg">
-    <div class="container">
-        <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Service Details</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="home-web-agency.html">Home</a></li>
-                <li>Service Details</li>
-            </ul>
-        </div>
-    </div>
-</div>
+
+<x-breadcumb-wrapper title="{{$this->service->title}}"
+    secondtile="service"
+
+    />
 <!--==============================
     Service Area
 ==============================-->
@@ -107,13 +118,18 @@ use function Livewire\Volt\{state};
             <div class="col-xxl-4 col-lg-4">
                 <aside class="sidebar-area">
                     <div class="widget widget_categories style2 ">
-                        <h3 class="widget_title">All Services</h3>
+                        <h3 class="widget_title">Tout les services</h3>
                         <ul>
+
+                            @foreach ($services as $service)
                             <li>
-                                <a href="blog.html">Software Development</a>
+                                <a href="{{route('service.details', $service->slug)}}">{{$service->title}}</a>
                                 <i class="fa-regular fa-arrow-right"></i>
                             </li>
-                            <li>
+
+                            @endforeach
+
+                            {{--<li>
                                 <a href="blog.html">Business Intelligence</a>
                                 <i class="fa-regular fa-arrow-right"></i>
                             </li>
@@ -128,7 +144,7 @@ use function Livewire\Volt\{state};
                             <li>
                                 <a href="blog.html">UI/UX Design Services</a>
                                 <i class="fa-regular fa-arrow-right"></i>
-                            </li>
+                            </li>--}}
                         </ul>
                     </div>
                     <div class="widget widget_call ">

@@ -17,8 +17,10 @@ return new class extends Migration
             $table->string("slug");
             $table->string("title");
             $table->string('description')->nullable();
-
-            $table->foreignId('user_id');
+            $table->string('tags')->nullable();
+            $table->string('category')->nullable();
+            $table->string('client')->nullable();
+           // $table->foreignId('user_id');
             $table->longText('content')->nullable();
             $table->date("published_at")->nullable();
             $table->date("is_published")->nullable();

@@ -44,6 +44,8 @@ class BlogResource extends Resource
             SpatieMediaLibraryFileUpload::make('images')->collection("blog")
             ->preserveFilenames()
             ->image()
+            ->imageResizeTargetHeight("260")
+            ->imageResizeTargetWidth("420")
             ->imageEditor()
 
             ->imageEditorMode(2)

@@ -1,10 +1,17 @@
 <?php
 
-use function Livewire\Volt\{state};
+use function Livewire\Volt\{state,with};
 
-//
+
+
+
+with(fn() => [
+    'services' => \App\Models\Service::all(),
+]);
 
 ?>
+
+
 
 <div class="service-area4 space" id="service-sec">
     <div class="container th-container2">
@@ -17,20 +24,24 @@ use function Livewire\Volt\{state};
                 data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
                 <div class="swiper-wrapper">
                     <!-- Service 1 -->
+
+                    @foreach ($services as $service)
                     <div class="swiper-slide">
                         <div class="service-item th-ani">
                             <div class="service-item_icon">
-                                <img src="/assets/img/icon/service_2_1.svg" alt="Marketing Digital">
+                                <img src="{{$service->getFirstMediaUrl('services')}}" alt="Marketing Digital">
                             </div>
                             <div class="service-item_content">
-                                <h3 class="box-title"><a href="details-service.html">Marketing Digital</a></h3>
-                                <p class="service-item_text">Stratégies en ligne pour améliorer votre visibilité et
-                                    attirer plus de clients.</p>
-                                <a href="details-service.html" class="line-btn">En savoir plus</a>
+                                <h3 class="box-title"><a href="{{route('service.details', $service->slug)}}">{{$service->title}}</a></h3>
+                                <p class="service-item_text">{{$service->description}}.</p>
+                                <a href="{{route('service.details', $service->slug)}}" class="line-btn">En savoir plus</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Service 2 -->
+
+                    @endforeach
+
+                  {{--  <!-- Service 2 -->
                     <div class="swiper-slide">
                         <div class="service-item th-ani">
                             <div class="service-item_icon">
@@ -144,7 +155,7 @@ use function Livewire\Volt\{state};
                                 <a href="details-service.html" class="line-btn">En savoir plus</a>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
             <button data-slider-prev="#serviceSlider1" class="slider-arrow slider-prev"><i

@@ -7,14 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Service extends Model
+class Service extends Model implements HasMedia
 {
-    /** @use HasFactory<\Database\Factories\ServiceFactory> */
+       use InteractsWithMedia;
+    /** @use HasFactory<\Database\Factories\BlogFactory> */
     use HasFactory;
 
-    use HasSlug;
 
+
+    use HasSlug;
 
     protected $fillable = [
         'slug',
