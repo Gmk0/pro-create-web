@@ -11,7 +11,10 @@
         <meta name="robots" content="INDEX,FOLLOW">
 
         <!-- Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="viewport" content="width=device-width; initial-scale=0.8; maximum-scale=1.0" />
+
+
 
         <!-- Favicons - Place favicon.ico in the root directory -->
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
@@ -86,7 +89,7 @@
            		Code Start From Here
         	******************************** -->
 
-            <x-loader />
+
 
 
 

@@ -32,7 +32,7 @@ class ServiceResource extends Resource
                 Forms\Components\TextInput::make('title')
                 ->required(),
 
-                Forms\Components\Textarea::make('description')->columnSpanFull(),
+            Forms\Components\Textarea::make('description')->columnSpanFull(),
                 TiptapEditor::make('content')
                 ->profile('default')
                 ->output(TiptapOutput::Html) // optional, change the format for saved data, default is html

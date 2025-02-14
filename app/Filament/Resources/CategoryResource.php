@@ -26,7 +26,7 @@ class CategoryResource extends Resource
 
                 Forms\Components\TextInput::make('title')
                     ->required(),
-                Forms\Components\TextArea::make('description'),
+            Forms\Components\Textarea::make('description'),
                 Forms\Components\FileUpload::make('image_url')
                     ->image(),
             ]);

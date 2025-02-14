@@ -118,11 +118,22 @@ Version: 1.0.0
 html,
 body {
   scroll-behavior: auto !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 
 body {
   font-family: var(--body-font);
-  font-size: 16px;
+ font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   font-weight: 400;
   color: var(--body-color);
   line-height: 26px;
@@ -6352,6 +6363,11 @@ ol.wp-block-rss {
   color: var(--title-color);
 }
 
+header {
+    width: 100%;
+
+}
+
 .header-links li > i {
   color: var(--theme-color);
   margin-right: 8px;
@@ -6466,7 +6482,7 @@ ol.wp-block-rss {
 .header-layout1 .sticky-wrapper.sticky .menu-area {
   background-color: transparent;
   margin: 0;
-  padding: 14px 0;
+  padding: 6px 0;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
@@ -6479,7 +6495,7 @@ ol.wp-block-rss {
 
 @media (max-width: 991px) {
   .header-layout1 .sticky-wrapper.sticky .menu-area {
-    padding: 12px 0;
+    padding: 6px 0;
   }
 }
 
@@ -6751,7 +6767,7 @@ ol.wp-block-rss {
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.36);
-  padding: 15px 0;
+  padding: 3px 0;
 }
 
 .header-layout4 .main-menu > ul > li > a {
