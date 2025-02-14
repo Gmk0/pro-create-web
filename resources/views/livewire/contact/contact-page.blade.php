@@ -83,7 +83,7 @@ use function Livewire\Volt\{state};
                         </div>
                         <div class="media-body">
                             <span class="contact-info_title">Visitez notre bureau</span>
-                            <span class="contact-info_text">15 Maniel Lane, Front Line Berlin</span>
+                            <span class="contact-info_text">32 avenue du stade, Kinshasa</span>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ use function Livewire\Volt\{state};
     <!--==============================
     Map Area
     ==============================-->
-    <div class="space-bottom">
+    <div class=" d-none space-bottom">
         <div class="container">
             <div class="contact-map">
                 <iframe

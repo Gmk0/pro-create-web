@@ -17,6 +17,7 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use FilamentTiptapEditor\Enums\TiptapOutput;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 
+
 class ServiceResource extends Resource
 {
     protected static ?string $model = Service::class;
@@ -40,6 +41,14 @@ class ServiceResource extends Resource
                     ->columnSpanFull(),
                 SpatieMediaLibraryFileUpload::make('images_url')->collection("services")
                 ->preserveFilenames()
+                ->image()
+                ->imageResizeTargetHeight("500")
+                ->imageResizeTargetWidth("876")
+                ->imageEditor()
+            ->multiple()
+            ->maxFiles(3)
+            ->reorderable()
+
                     ,
 
             ]);

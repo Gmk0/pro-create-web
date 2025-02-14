@@ -49,4 +49,6 @@ class Blog extends Model implements HasMedia
     }
 
 
+
+
 }

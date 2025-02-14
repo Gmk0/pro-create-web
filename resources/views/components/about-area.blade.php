@@ -1,4 +1,4 @@
-<div class="overflow-hidden position-relative ">
+<div wire:ignore class="overflow-hidden position-relative ">
     <div class="container">
         <div class="overflow-hidden about-sec position-relative" data-bg-src="/assets/img/normal/satisfaction.png">
             <div class="about-shape2">
@@ -40,7 +40,7 @@
                         <h2 class="text-white sec-title">Notre mission est d'accompagner nos clients dans leur
                             transformation digitale avec des solutions innovantes.</h2>
                     </div>
-                    <a href="a-propos.html" class="th-btn style3">En savoir plus</a>
+                    <a href="{{route('about')}}" class="th-btn style3">En savoir plus</a>
                 </div>
             </div>
         </div>

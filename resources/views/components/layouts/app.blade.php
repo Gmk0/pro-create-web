@@ -58,6 +58,7 @@
 
         <!-- Magnific Popup -->
         <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+        <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
         <!-- Swiper css -->
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
         <!-- datetimepicker -->
@@ -66,6 +67,8 @@
          rel="stylesheet" href="/assets/css/style.css">
 
          <link rel="stylesheet" href="/assets/css/stylescss.css">
+
+         @livewireStyles
 
 
         <!-- Theme Custom CSS -->
@@ -82,6 +85,8 @@
         <!--********************************
            		Code Start From Here
         	******************************** -->
+
+            <x-loader />
 
 
 
@@ -106,6 +111,8 @@
             All Js File
         ============================== -->
         <!-- Jquery -->
+
+        @livewireScripts
         <script src="/assets/js/vendor/jquery-3.7.1.min.js"></script>
         <!-- Swiper Js -->
         <script src="/assets/js/swiper-bundle.min.js"></script>
@@ -132,12 +139,14 @@
         <script src="/assets/js/ScrollTrigger.min.js"></script>
 
         <!-- nice select -->
-        <script src="/assets/js/nice-select.min.js"></script>
+
 
         <script src="/assets/js/smooth-scroll.js"></script>
         <script src="/js/awcodes/tiptap-editor/components/tiptap.js"></script>
 
         <!-- Main Js File -->
         <script src="/assets/js/main.js"></script>
+
+
     </body>
 </html>

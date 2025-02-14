@@ -7,9 +7,11 @@
                         <!-- Logo -->
                         <div class="col-auto">
                             <div class="header-logo ">
-                                <a href="accueil.html">
+                                <a href="/" class="text-center">
 
-                                  <h5 class="">PRO CREATE</h5>
+                                    <img src="/assets/img/logo_p.png" height="30" alt="">
+
+
 
 
                                 </a>
@@ -17,29 +19,15 @@
                         </div>
                         <!-- Menu Principal -->
                         <div class="col-auto">
-                            <nav class="main-menu style2 d-none d-lg-inline-block">
-                                <ul>
-                                    <li class="">
-                                        <a href="/">Accueil</a>
-
-                                    </li>
-
-                                    <li class="">
-                                        <a href="{{route('services')}}">Services</a>
-
-                                    </li>
-                                    <li class="">
-                                        <a href="{{route('blog')}}">Blog</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="{{route('about')}}">A propos de nous </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{route('contact')}}">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                           <nav class="main-menu style2 d-none d-lg-inline-block">
+                            <ul>
+                                <li><a href="/">Accueil</a></li>
+                                <li><a href="{{ route('services') }}">Services</a></li>
+                                <li><a href="{{ route('blog') }}">Blog</a></li>
+                                <li><a href="{{ route('about') }}">À propos de nous</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
+                            </ul>
+                        </nav>
                         </div>
                         <!-- Bouton d'appel à l'action -->
                         <div class="col-auto">

@@ -7,7 +7,7 @@ use function Livewire\Volt\{state};
 ?>
 
 
-<div class="bg-white brand-area space-bottom">
+<div class="bg-white brand-area d-none space-bottom">
     <div class="container">
         <div class="text-center title-area mb-35">
             <h6 class="brand-title">Nous avons collaboré sur plus de 200 projets avec 150+ clients satisfaits</h6>

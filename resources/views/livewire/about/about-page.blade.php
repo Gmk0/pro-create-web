@@ -10,107 +10,132 @@ use function Livewire\Volt\{state};
 
     <x-breadcumb-wrapper title="a propos de nous" />
 
-   <div class="overflow-hidden bg-white about-area4 space" id="about-sec">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6">
-                <div class="img-box1">
-                    <div class="img1 th-anim global-img">
-                        <img src="assets/img/normal/about_1.jpg" alt="Équipe IT">
+
+    <div class="overflow-hidden bg-white about-area4 space" id="about-sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="img-box1">
+                        <div class="img1 th-anim global-img">
+                            <img src="assets/img/normal/about_1.jpg" alt="Équipe Pro Create">
+                        </div>
+                        <div class="img2 th-anim global-img jump">
+                            <img src="assets/img/normal/about_2.png" alt="Solutions digitales innovantes">
+                        </div>
+                        <div class="about-shape"></div>
                     </div>
-                    <div class="img2 th-anim global-img jump">
-                        <img src="assets/img/normal/about_2.jpg" alt="Solutions digitales">
-                    </div>
-                    <div class="about-shape"></div>
                 </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="about-content-area ps-xl-4 ms-xl-2">
-                    <div class="title-area mb-35">
-                        <span class="sub-title">Notre expertise</span>
-                        <h2 class="sec-title">Simplifiez votre transformation digitale avec notre expertise</h2>
-                        <p class="">Nous accompagnons les entreprises dans leur mutation technologique, des PME aux
-                            grands groupes. Notre objectif : proposer des solutions sur mesure qui accélèrent votre
-                            croissance et sécurisent vos opérations.</p>
-                    </div>
-                    <div class="about-counter-wrapper">
-                        <div class="th-experience style2">
-                            <div class="th-experience_content">
-                                <h2 class="experience-year"><span class="counter-number">5</span>+</h2>
-                                <p class="experience-text">Ans d'expertise</p>
+                <div class="col-xl-6">
+                    <div class="about-content-area ps-xl-4 ms-xl-2">
+                        <div class="title-area mb-35">
+                            <span class="sub-title">À propos de Pro Create</span>
+                            <h2 class="sec-title">Transformez votre entreprise avec nos solutions digitales</h2>
+                            <p>
+                                Pro Create est une entreprise spécialisée dans la conception de solutions numériques
+                                innovantes.
+                                Nous accompagnons les entreprises dans leur transformation digitale en développant des
+                                outils performants, sécurisés et adaptés à leurs besoins spécifiques.
+                            </p>
+                        </div>
+                        <div class="about-counter-wrapper">
+                            <div class="th-experience style2">
+                                <div class="th-experience_content">
+                                    <h2 class="experience-year"><span class="counter-number">100</span>%</h2>
+                                    <p class="experience-text">Satisfaction client</p>
+                                </div>
+                            </div>
+
+                            <div class="checklist">
+                                <ul>
+                                    <li>Développement d’applications web et mobiles</li>
+                                    <li>Solutions cloud et hébergement sécurisé</li>
+                                    <li>Cybersécurité et protection des données</li>
+                                    <li>Automatisation des processus métiers</li>
+                                    <li>Création et intégration d’ERP & CRM</li>
+                                    <li>Consulting en transformation digitale</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="checklist">
-                            <ul>
-                                <li>Solutions cloud et infrastructure sécurisées</li>
-                                <li>Cybersécurité sur-mesure pour votre activité</li>
-                                <li>Intégration d'ERP et outils de gestion</li>
-                                <li>Automatisation des processus métiers</li>
-                            </ul>
+
+
+                        <div class="mt-4">
+                            <p>
+                                Grâce à une approche centrée sur l’innovation et l’excellence, nous aidons nos clients à
+                                optimiser leur productivité et à sécuriser leur infrastructure digitale.
+                            </p>
+                            <p class="mt-3">
+                                Notre équipe d'experts travaille en étroite collaboration avec chaque entreprise pour proposer
+                                des solutions sur mesure, adaptées aux défis spécifiques de chaque secteur d'activité.
+                            </p>
+                            <p class="mt-3">
+                                Chez Pro Create, nous croyons en l'importance de l'innovation continue et de la
+                                transformation digitale comme levier de croissance. Notre engagement est d'offrir des services
+                                à la pointe de la technologie, tout en garantissant une expérience utilisateur fluide et efficace.
+                            </p>
+                        </div>
+                        <div class="mt-40 btn-group justify-content-start">
+
+                            <a href="/contact" class="th-btn ">Nous contacter</a>
                         </div>
                     </div>
-                    <div class="mt-40 btn-group justify-content-start">
-                        <a href="about.html" class="th-btn">Démarrer maintenant</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Counter Area
+    ==============================-->
+   <div class="bg-theme">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
+                <div class="counter-card style2">
+                    <div class="box-icon">
+                        <img src="assets/img/icon/counter_card_2_1.svg" alt="Icône">
+                    </div>
+                    <div class="media-body">
+                        <h2 class="text-white box-number"><span class="counter-number">40</span>+</h2>
+                        <p class="text-white box-text">Produits Développés</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
+                <div class="counter-card style2">
+                    <div class="box-icon">
+                        <img src="assets/img/icon/counter_card_2_2.svg" alt="Icône">
+                    </div>
+                    <div class="media-body">
+                        <h2 class="text-white box-number"><span class="counter-number">200</span>+</h2>
+                        <p class="text-white box-text">Membres de l'Équipe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
+                <div class="counter-card style2">
+                    <div class="box-icon">
+                        <img src="assets/img/icon/counter_card_2_3.svg" alt="Icône">
+                    </div>
+                    <div class="media-body">
+                        <h2 class="text-white box-number"><span class="counter-number">68</span>+</h2>
+                        <p class="text-white box-text">Clients Satisfaits</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
+                <div class="counter-card style2">
+                    <div class="box-icon">
+                        <img src="assets/img/icon/counter_card_2_4.svg" alt="Icône">
+                    </div>
+                    <div class="media-body">
+                        <h2 class="text-white box-number"><span class="counter-number">99</span>+</h2>
+                        <p class="text-white box-text">Récompenses Décernées</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <!--==============================
-    Counter Area
-    ==============================-->
-    <div class="bg-theme ">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                    <div class="counter-card style2">
-                        <div class="box-icon">
-                            <img src="assets/img/icon/counter_card_2_1.svg" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="text-white box-number"><span class="counter-number">40</span>+</h2>
-                            <p class="text-white box-text">Our Total Products</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                    <div class="counter-card style2">
-                        <div class="box-icon">
-                            <img src="assets/img/icon/counter_card_2_2.svg" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="text-white box-number"><span class="counter-number">200</span>+</h2>
-                            <p class="text-white box-text">Team Members</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                    <div class="counter-card style2">
-                        <div class="box-icon">
-                            <img src="assets/img/icon/counter_card_2_3.svg" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="text-white box-number"><span class="counter-number">68</span>+</h2>
-                            <p class="text-white box-text">Satisfied Customers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                    <div class="counter-card style2">
-                        <div class="box-icon">
-                            <img src="assets/img/icon/counter_card_2_4.svg" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="text-white box-number"><span class="counter-number">99</span>+</h2>
-                            <p class="text-white box-text">Awards Winning</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--==============================
     Video Area
     ==============================-->

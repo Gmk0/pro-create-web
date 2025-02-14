@@ -26,17 +26,9 @@ new class extends Component {
 }; ?>
 
 <div>
-<div class="breadcumb-wrapper " data-bg-src="/assets/img/bg/breadcumb-bg.jpg">
-    <div class="container">
-        <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Blog Details</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="home-web-agency.html">Home</a></li>
-                <li>Blog Details</li>
-            </ul>
-        </div>
-    </div>
-</div>
+
+    <x-breadcumb-wrapper secondtitle="Blog" title="{{$blog->title}}" />
+
 <!--==============================
         Blog Area
     ==============================-->

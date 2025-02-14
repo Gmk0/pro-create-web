@@ -2,7 +2,8 @@
     <div class="text-center th-menu-area">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a href="/"></a>
+            <a href="/">
+            <img src="/assets/img/logo_p.png" alt=""></a>
         </div>
         <div class="th-mobile-menu">
             <ul>
@@ -11,12 +12,9 @@
 
                 </li>
 
-                <li class="menu-item-has-children">
-                    <a href="#">Services</a>
-                    <ul class="sub-menu">
-                        <li><a href="services.html">Nos Services</a></li>
+                <li class="">
+                    <a href="/services">Nos Services</a>
 
-                    </ul>
                 </li>
                 <li class="">
                     <a href="{{route('blog')}}">Blog</a>

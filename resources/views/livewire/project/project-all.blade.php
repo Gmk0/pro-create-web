@@ -51,13 +51,8 @@ with(fn() => [
 
 
                 </div>
-                <div class="mb-0 text-center th-pagination mt-80">
-                    <ul>
-                        <li><a href="blog.html">1</a></li>
-                        <li><a href="blog.html">2</a></li>
-                        <li><a href="blog.html">3</a></li>
-                        <li><a href="blog.html"><i class="fa-solid fa-angles-right"></i></a></li>
-                    </ul>
+                <div class="mb-0 text-center mt-80">
+                    {{$projects->links()}}
                 </div>
             </div>
         </section>

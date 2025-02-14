@@ -31,11 +31,14 @@ Volt::route('/blog', 'blog.blog-page')->name('blog');
 
 Volt::route('/project/{slug}', 'project.project-detail')->name('project.detail');
 
-Volt::route('/project', 'project.project-all')->name('project');
+Volt::route('/projects', 'project.project-all')->name('project');
 
 Volt::route('/services/{slug}', 'service.service-details')->name('service.details');
 
 Volt::route('/services', 'service.service-all-page')->name('services');
 });
+
+
+
 
 

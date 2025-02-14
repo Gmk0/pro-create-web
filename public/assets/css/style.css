@@ -835,12 +835,12 @@ textarea.is-invalid {
   margin-bottom: 0;
 }
 
-.form-messages.success {
+.success {
   color: var(--success-color);
   display: block;
 }
 
-.form-messages.error {
+.error {
   color: var(--error-color);
   display: block;
 }
@@ -6309,8 +6309,7 @@ ol.wp-block-rss {
 }
 
 .header-logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
+
 }
 
 .header-links ul {

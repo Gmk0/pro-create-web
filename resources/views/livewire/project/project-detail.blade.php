@@ -4,16 +4,27 @@ use App\Models\Project;
 use function Livewire\Volt\{mount, state};
 
 // Définir les états
-state(['project' => null]);
+state(['project' => null,'next_project' => null, 'prev_project' => null]);
 
 
 mount(function ($slug) {
 $this->project = Project::where('slug', $slug)->first();
 
+
+
 if (is_null($this->project)) {
 return redirect()->route('project');
 }
 
+// Récupérer le projet suivant (le plus proche avec un ID supérieur)
+$this->next_project = Project::where('id', '>', $this->project->id)
+->orderBy('id', 'asc')
+->first();
+
+// Récupérer le projet précédent (le plus proche avec un ID inférieur)
+$this->prev_project = Project::where('id', '<', $this->project->id)
+    ->orderBy('id', 'desc')
+    ->first();
 //
 });
 
@@ -91,16 +102,21 @@ return redirect()->route('project');
 
                 </div>
             </div>
-            <div class="project-nav">
-                <a href="project-details.html" class="nav-btn">
-                    <i class="far fa-arrow-left icon-btn"></i>
-                    Previous Post
-                </a>
-                <a href="project-details.html" class="nav-btn">
-                    Next Post
-                    <i class="far fa-arrow-right icon-btn"></i>
-                </a>
-            </div>
+          <div class="project-nav">
+            @if($prev_project)
+            <a href="{{ route('project.detail', ['slug' => $prev_project->slug]) }}" class="nav-btn">
+                <i class="far fa-arrow-left icon-btn"></i>
+                Projet Précédent
+            </a>
+            @endif
+
+            @if($next_project)
+            <a href="{{ route('project.detail', ['slug' => $next_project->slug]) }}" class="nav-btn">
+                Projet Suivant
+                <i class="far fa-arrow-right icon-btn"></i>
+            </a>
+            @endif
+        </div>
         </div>
     </section>
 </div>

@@ -55,13 +55,13 @@ use function Livewire\Volt\{state};
                             <div class="th-widget-about">
                                 <div class="footer-info">
                                     <p class="footer-info_text">
-                                        <a href="tel:+2430000000" class="text-inherit">+243 000 000 000</a>
+                                        <a href="tel:+2430000000" class="text-inherit">+243 813657847</a>
                                     </p>
                                 </div>
                                 <p class="footer-info"><a class="text-inherit"
-                                        href="mailto:contact@votreentreprise.com">contact@votreentreprise.com</a>
+                                        href="mailto:contact@votreentreprise.com">contact@pro-create-drc.com</a>
                                 </p>
-                                <p class="footer-info">123 Avenue de l'Innovation, Kinshasa, RDC</p>
+                                <p class="footer-info">32 avenue du stade, Kinshasa, RDC</p>
                             </div>
                         </div>
                     </div>

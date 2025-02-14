@@ -25,8 +25,8 @@ with(fn() => [
 
 <div>
 
-<x-breadcumb-wrapper title="{{$this->service->title}}"
-    secondtile="service"
+<x-breadcumb-wrapper title="{{$service->title}}"
+    secondtitle="services"
 
     />
 <!--==============================
@@ -38,79 +38,25 @@ with(fn() => [
             <div class="col-xxl-8 col-lg-8">
                 <div class="mb-0 page-single">
                     <div class="page-img th-anim">
-                        <img src="assets/img/service/service_details.jpg" alt="Service Image">
+
+
+
+                        <img src="{{$service->media[1]->getUrl()}}" alt="{{$service->media[1]->name}}">
+
+
+
+
+
+
                     </div>
                     <div class="page-content">
-                        <h4 class="sec-title page-title">Content Management System</h4>
-                        <p class="mb-30">A Content Management System (CMS) is a software application that allows users
-                            to
-                            create, manage, and modify digital content, such as text, images, videos, and documents, on
-                            a website without requiring in-depth technical knowledge. CMS platforms streamline the
-                            process of website management, enabling users to focus on content creation and organization
-                            rather than coding and programming. Here's a deeper look into CMS:</p>
-                        <div class="features-wrapper">
-                            <div class="features-img th-anim">
-                                <img src="assets/img/normal/feature_img.jpg" alt="">
-                            </div>
-                            <div class="features-content">
-                                <h4 class="box-title">Components of a CMS:</h4>
-                                <p>Pulvinar nullam lobortis duis neque at pretium dis cubilia fusce, mus hendrerit
-                                    interdum euismod</p>
-                                <div class="checklist style2">
-                                    <ul>
-                                        <li>User Interface (UI) </li>
-                                        <li> Plugins and Extensions</li>
-                                        <li>Templates and Themes</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <h4 class="sec-title page-title">{{$service->title}}</h4>
 
-                        <p class="mt-30 mb-30">A Content Management System (CMS) comprises various components that work
-                            together to enable users to create, manage, and publish digital content on the web without
-                            the need for advanced technical skills. These components ensure the smooth functioning of
-                            the CMS and provide users with the tools they need to effectively manage their online
-                            presence.</p>
+                        <article id="article">
+                                {!! tiptap_converter()->asHTML($service->content) !!}
+                            </article>
 
-                        <h4 class="mb-20">4 Simple Steps to Process</h4>
 
-                        <p class="mb-30">The process of managing content using a Content Management System (CMS)
-                            involves several key steps to ensure effective content creation, organization, and
-                            publication. Here's a typical workflow:</p>
-                        <div class="service-process-wrap">
-                            <div class="service-process">
-                                <div class="service-process_num">01</div>
-                                <div class="service-process_centent">
-                                    <h5 class="service-process_title">Content Creation:</h5>
-                                    <p class="service-process_text">Identify the type of content needed (e.g., articles,
-                                        blog posts...</p>
-                                </div>
-                            </div>
-                            <div class="service-process">
-                                <div class="service-process_num">02</div>
-                                <div class="service-process_centent">
-                                    <h5 class="service-process_title">Content Review and Editing:</h5>
-                                    <p class="service-process_text">Review and edit the content for accuracy, grammar,
-                                        style....</p>
-                                </div>
-                            </div>
-                            <div class="service-process">
-                                <div class="service-process_num">03</div>
-                                <div class="service-process_centent">
-                                    <h5 class="service-process_title">Media Management:</h5>
-                                    <p class="service-process_text">Organize media assets into folders for easy
-                                        retrieval and...</p>
-                                </div>
-                            </div>
-                            <div class="service-process">
-                                <div class="service-process_num">04</div>
-                                <div class="service-process_centent">
-                                    <h5 class="service-process_title">Content Organization:</h5>
-                                    <p class="service-process_text">Choose an appropriate category or topic for the
-                                        content to...</p>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -147,47 +93,61 @@ with(fn() => [
                             </li>--}}
                         </ul>
                     </div>
-                    <div class="widget widget_call ">
-                        <div class="widget-call">
-                            <h4 class="text-white box-title">Need Any Help?</h4>
-                            <p class="text-white">Need Any Help, Call Us 24/7 For Support</p>
-                            <div class="widget_call">
+                   <div class="widget widget_call">
+                    <div class="widget-call">
+                        <h4 class="text-white box-title">Besoin d'aide ?</h4>
+                        <p class="text-white">Nous sommes disponibles 24/7 pour vous assister</p>
+                        <div class="widget_call">
 
-                                <div class="info-box">
-                                    <div class="info-box_icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div>
-                                        <span class="info-box_subtitle"> Call Us</span>
-                                        <p class="info-box_text">
-                                            <a href="tel:+2869852156" class="info-box_link">+286 985 2156</a>
-                                        </p>
-                                    </div>
+                            <div class="info-box">
+                                <div class="info-box_icon">
+                                    <i class="fas fa-phone"></i>
                                 </div>
-                                <div class="info-box">
-                                    <div class="info-box_icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div>
-                                        <span class="info-box_subtitle">Mail Us</span>
-                                        <p class="info-box_text">
-                                            <a href="mailto:info@example.com" class="info-box_link">info@example.com</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="info-box">
-                                    <div class="info-box_icon">
-                                        <i class="fa-regular fa-location-dot"></i>
-                                    </div>
-                                    <div>
-                                        <span class="info-box_subtitle">Office Address</span>
-                                        <p class="info-box_text">125 Berlin, Germany</p>
-                                    </div>
+                                <div>
+                                    <span class="info-box_subtitle">Appelez-nous</span>
+                                    <p class="info-box_text">
+                                        <a href="tel:+243813657847" class="info-box_link">+243 813657847</a>
+                                    </p>
                                 </div>
                             </div>
+
+                            <div class="info-box">
+                                <div class="info-box_icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="info-box_subtitle">Contactez-nous sur WhatsApp</span>
+                                    <p class="info-box_text">
+                                        <a href="https://wa.me/243813657847" class="info-box_link" target="_blank">+243 813657847</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <div class="info-box_icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="info-box_subtitle">Envoyez-nous un e-mail</span>
+                                    <p class="info-box_text">
+                                        <a href="mailto:info@pro-create-drc.com" class="info-box_link">info@pro-create-drc.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="info-box d-none">
+                                <div class="info-box_icon">
+                                    <i class="fa-regular fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="info-box_subtitle">Adresse de notre bureau</span>
+                                    <p class="info-box_text">125 Berlin, Allemagne</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                </div>
                 </aside>
             </div>
         </div>

@@ -24,17 +24,7 @@ with(fn() => [
 
 
 <div>
-<div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg">
-        <div class="container">
-            <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Blog Lists View</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="home-web-agency.html">Home</a></li>
-                    <li>Blog Lists View</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <x-breadcumb-wrapper title="Blog" />
     <!--==============================
     Blog Area
     ==============================-->
@@ -77,11 +67,11 @@ with(fn() => [
                     <div class="blog-content">
                         <div class="blog-meta">
                             <a href="blog.html"><i class="far fa-calendar"></i>{{ $blog->published_at }}</a>
-                            <a class="author" href="blog.html"><i class="far fa-user"></i>By Webtek</a>
+                            <a class="author" href="blog.html"><i class="far fa-user"></i>Par pro-create</a>
                         </div>
                         <h2 class="blog-title"><a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}">{{ $blog->title }}</a></h2>
                         <p class="blog-text">{{ $blog->description }}</p>
-                        <a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}" class="th-btn btn-sm">Read More <i
+                        <a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}" class="th-btn btn-sm">Voir plus <i
                                 class="fa-solid fa-angles-right"></i></a>
                     </div>
                 </div>
@@ -120,19 +110,19 @@ with(fn() => [
                             </ul>
                         </div>
 
-                        <div class="widget widget_tag_cloud ">
-                            <h3 class="widget_title">Popular Tags</h3>
-                            <div class="tagcloud">
-                                <a href="blog.html">Advice</a>
-                                <a href="blog.html">Author</a>
-                                <a href="blog.html">Consulting</a>
-                                <a href="blog.html">Webteck</a>
-                                <a href="blog.html">Family</a>
-                                <a href="blog.html">Health</a>
-                                <a href="blog.html">Judge</a>
-                                <a href="blog.html">Solution</a>
-                            </div>
+                      <div class="widget widget_tag_cloud">
+                        <h3 class="widget_title">Tags populaires</h3>
+                        <div class="tagcloud">
+                            <a href="blog.html">Développement Web</a>
+                            <a href="blog.html">Intelligence Artificielle</a>
+                            <a href="blog.html">Cloud Computing</a>
+                            <a href="blog.html">Blockchain</a>
+                            <a href="blog.html">Cybersécurité</a>
+                            <a href="blog.html">Big Data</a>
+                            <a href="blog.html">IoT (Internet des Objets)</a>
+                            <a href="blog.html">Machine Learning</a>
                         </div>
+                    </div>
                     </aside>
                 </div>
 
