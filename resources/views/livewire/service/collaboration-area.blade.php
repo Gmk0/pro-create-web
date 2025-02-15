@@ -42,11 +42,11 @@ $save = function () {
 ?>
 
 <div class="space" data-bg-src="/assets/img/about_us/collabo3.png" style="background-image: url(/assets/img/about_us/collabo3.png);">
-        <div class="container">
+        <div class="container p-3 p-md-0">
             <div class="row align-items-center">
                 <!-- Texte de présentation -->
                 <div class="col-xl-6">
-                    <div class="title-area mb-30 text-xl-start">
+                    <div class="title-area text-xl-start">
                         <span class="sub-title style1">Collaborons Ensemble</span>
                         <h2 class="text-white sec-title">Demandez une consultation gratuite dès aujourd'hui</h2>
                         <p class="sec-text">

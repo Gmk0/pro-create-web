@@ -3,7 +3,7 @@
             <div class="th-hero-bg" data-bg-src="/assets/img/hero/1-min.jpg">
                 <img src="/assets/img/hero/1-min.jpg" alt="Image Héros">
             </div>
-            <div class="container">
+            <div class="container px-4 px-md-3">
                 <div class="hero-style4">
                     <span class="text-white sub-title style1">Nous sommes une agence digitale innovante</span>
                     <h1 class="text-white hero-title"> Des idées claires pour un avenir brillant ! </h1>

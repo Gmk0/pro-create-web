@@ -1,8 +1,4 @@
-
-
-
-
-<header class="th-header  header-layout4 header-absolute">
+<header class="th-header header-layout4 header-absolute">
     <div class="sticky-wrapper">
         <!-- Zone du Menu Principal -->
         <div class="menu-area">

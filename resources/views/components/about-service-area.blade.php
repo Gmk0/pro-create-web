@@ -1,13 +1,14 @@
 <div class="overflow-hidden space" data-bg-src="/assets/img/bg/course_bg_1.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="text-center title-area">
-                    <span class="sub-title">Pourquoi nous choisir</span>
-                    <h2 class="text-white sec-title">Ce qui nous distingue des autres</h2>
-                </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="text-center title-area">
+                <span class="sub-title">Pourquoi nous choisir</span>
+                <h2 class="text-white sec-title">Ce qui nous distingue des autres</h2>
             </div>
         </div>
+    </div>
+    <div class="container">
+
         <div class="choose-tabs-wrapper">
             <div class="nav nav-tabs choose-tabs-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-step1-tab" data-bs-toggle="tab" data-bs-target="#nav-step1"

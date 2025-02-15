@@ -1,5 +1,5 @@
 <div class="overflow-hidden counter-area space-bottom">
-    <div class="container">
+    <div class="container px-4 px-md-0">
         <div class="counter-card-wrap">
             <!-- Années d’Expérience -->
             <div class="counter-card">

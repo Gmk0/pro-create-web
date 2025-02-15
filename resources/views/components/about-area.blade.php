@@ -1,6 +1,6 @@
-<div wire:ignore class="overflow-hidden position-relative ">
-    <div class="container">
-        <div class="overflow-hidden about-sec position-relative" data-bg-src="/assets/img/normal/satisfaction.png">
+<div  class="overflow-hidden position-relative ">
+    <div class="container ">
+        <div class="overflow-hidden about-sec position-relative"  data-bg-src="/assets/img/normal/satisfaction.png">
             <div class="about-shape2">
                 <div class="marquee-wrapper">
                     <div class="marquee">
@@ -34,9 +34,9 @@
                 </div>
             </div>
             <div class="about-area2">
-                <div class="title-area-wrapper">
-                    <div class="mb-40 title-area">
-                        <span class="text-white sub-title style1">Notre Mission Principale</span>
+                <div class="px-4 title-area-wrapper">
+                    <div class="pt-2 title-area">
+                        <span class="mb-5 text-white sub-title style1">Notre Mission Principale</span>
                         <h2 class="text-white sec-title">Notre mission est d'accompagner nos clients dans leur
                             transformation digitale avec des solutions innovantes.</h2>
                     </div>

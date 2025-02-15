@@ -11,7 +11,7 @@ with(fn() => [
 
 ?>
 
-<div class="p-6 overflow-hidden space-bottom" id="blog-sec" data-bg-src="/assets/img/blog/blog_bg_1.png">
+<div class="p-3 overflow-hidden p-md-0 space-bottom" id="blog-sec" data-bg-src="/assets/img/blog/blog_bg_1.png">
     <div class="container ">
         <div class="text-center title-area">
             <span class="sub-title">Derniers Articles</span>
