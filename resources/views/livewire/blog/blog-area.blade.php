@@ -14,6 +14,11 @@ with(fn() => [
 
 <div class="p-6 overflow-hidden bg-center bg-cover md:p-0 space-bottom"
     style="background-image: url('/assets/img/blog/blog_bg_1.png');" id="blog-sec">
+
+    @empty(!$blogs)
+
+
+
     <div class="max-w-6xl p-4 mx-auto">
         <div class="text-center title-area">
             <span class="sub-title-custom">Derniers Articles</span>
@@ -68,4 +73,5 @@ with(fn() => [
 
         </div>
     </div>
+    @endempty
 </div>
