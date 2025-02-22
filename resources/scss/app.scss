@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+>>> AgileTech - SCSS Compilation
+--------------------------------------------------------------*/
+
+// 1️⃣ Placer TOUS les `@use` en premier
+@use "global";
+@use "sections";
+@use "responsive";
+
+// 2️⃣ Puis importer les CSS externes (sans @use)
+@import "animate.css";
+@import "../vendor/css/nice-select.min.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import "../vendor/css/magnific.min.css";
+@import "../vendor/css/owl.min.css";
+
+// 3️⃣ Ensuite seulement, les styles Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

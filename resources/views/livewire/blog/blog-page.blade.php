@@ -5,7 +5,7 @@
 use function Livewire\Volt\{state,with, title,usesPagination};
 
 
-usesPagination(theme: 'bootstrap');
+usesPagination();
 
 state(['search' => ''])->url();
 
@@ -29,11 +29,11 @@ with(fn() => [
     Blog Area
     ==============================-->
     <section class="th-blog-wrapper space-top space-extra-bottom">
-        <div class="container">
-            <div class="row">
+        <div class="container px-8">
+            <div class="flex flex-col-reverse gap-4 md:grid md:grid-cols-12">
 
 
-                <div class="col-xxl-8 col-lg-7">
+                <div class="col-xxl-8 xl:col-span-8 lg:col-span-7 col-lg-7">
 
                    @foreach ($blogs as $blog)
                 <div class="th-blog blog-single has-post-thumbnail">
@@ -66,7 +66,7 @@ with(fn() => [
 
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <a href="blog.html"><i class="far fa-calendar"></i>{{ $blog->published_at }}</a>
+                            <a href="#"><i class="far fa-calendar"></i>{{ $blog->published_at }}</a>
                             <a class="author" href="blog.html"><i class="far fa-user"></i>Par pro-create</a>
                         </div>
                         <h2 class="blog-title"><a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}">{{ $blog->title }}</a></h2>
@@ -85,7 +85,9 @@ with(fn() => [
 
                     </div>
                 </div>
-                <div class="col-xxl-4 col-lg-5">
+
+
+                <div class=" xl:col-span-4 lg:col-span-5">
                     <aside class="sidebar-area">
                         <div class="widget widget_search ">
                             <form class="search-form">

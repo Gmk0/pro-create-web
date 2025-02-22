@@ -19,14 +19,14 @@ with(fn() => [
 
     <x-breadcumb-wrapper title="Services" />
     <section class="space" id="service-other-sec">
-        <div class="container">
-            <div class="row gy-4">
+        <div class="container px-8">
+            <div class="flex flex-row gap-4">
 
                 @foreach ($services as $index => $service)
-                <div class="col-md-6 col-xl-4">
+                <div class=" md:w-6/12 xl:w-4/12">
                     <div class="service-other-card">
                         <div class="service-other-card_number">{{$index +1}}</div>
-                        <div class="shape-icon"><img src="{{$service->getFirstMediaUrl('services')}}" alt="Icon"> <span class="dots"></span></div>
+                        <div class="flex items-center justify-center shape-icon"><img src="{{$service->getFirstMediaUrl('services')}}" alt="Icon"> <span class="dots"></span></div>
                         <h3 class="box-title"><a href="{{route('service.details', $service->slug)}}">{{$service->title}}</a></h3>
                         <p class="service-other-card_text">{{$service->description}}</p><a href="{{route('service.details', $service->slug)}}"
                             class="th-btn">voir plus<i class="fa-regular fa-arrow-right ms-2"></i></a>
@@ -136,7 +136,7 @@ with(fn() => [
             </div>
         </div>
     </section>
-    <section class="position-relative space">
+    <section class="relative space">
         <div class="th-bg-img background-image" style="background-image: url(/assets/img/bg/cta_bg_2.jpg);">
             <img src="/assets/img/bg/bg_overlay_1.png" alt="overlay">
         </div>
@@ -177,14 +177,14 @@ with(fn() => [
             <h2 class="sec-title">Comment <span class="text-theme">nous travaillons ?</span></h2>
         </div>
         <div class="process-card-area">
-            <div class="process-line">
+            <div class="pl-20 process-line">
                 <img src="/assets/img/bg/process_line.svg" alt="ligne">
             </div>
-            <div class="row gy-40">
-                <div class="col-sm-6 col-xl-3 process-card-wrap">
+            <div class="grid w-full grid-cols-12 gap-4 px-8 mx-auto">
+                <div class="col-span-6 xl:col-span-3 md:col-span-4 process-card-wrap">
                     <div class="process-card">
                         <div class="process-card_number">01</div>
-                        <div class="process-card_icon">
+                        <div class="flex items-center justify-center process-card_icon">
                             <img src="/assets/img/icon/process_card_1.svg" alt="icône">
                         </div>
                         <h2 class="box-title">Définir votre projet</h2>
@@ -192,10 +192,10 @@ with(fn() => [
                             nous en ferons une réalité.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 process-card-wrap">
+                <div class="col-span-6 xl:col-span-3 md:col-span-4 process-card-wrap">
                     <div class="process-card">
                         <div class="process-card_number">02</div>
-                        <div class="process-card_icon">
+                        <div class="flex items-center justify-center process-card_icon">
                             <img src="/assets/img/icon/process_card_2.svg" alt="icône">
                         </div>
                         <h2 class="box-title">Analyse & Stratégie</h2>
@@ -203,10 +203,10 @@ with(fn() => [
                             solutions adaptées à vos besoins.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 process-card-wrap">
+                <div class="col-span-6 xl:col-span-3 md:col-span-4 process-card-wrap">
                     <div class="process-card">
                         <div class="process-card_number">03</div>
-                        <div class="process-card_icon">
+                        <div class="flex items-center justify-center process-card_icon">
                             <img src="/assets/img/icon/process_card_3.svg" alt="icône">
                         </div>
                         <h2 class="box-title">Planification & Exécution</h2>
@@ -214,10 +214,10 @@ with(fn() => [
                             méthodique et agile.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 process-card-wrap">
+                <div class="col-span-6 xl:col-span-3 md:col-span-4 process-card-wrap">
                     <div class="process-card">
                         <div class="process-card_number">04</div>
-                        <div class="process-card_icon">
+                        <div class="flex items-center justify-center process-card_icon">
                             <img src="/assets/img/icon/process_card_4.svg" alt="icône">
                         </div>
                         <h2 class="box-title">Livraison & Suivi</h2>
@@ -228,11 +228,9 @@ with(fn() => [
             </div>
         </div>
     </div>
-
-    @livewire("service.testimonial-area")
-
-
 </section>
+
+@livewire("service.testimonial-area")
 
 
 </div>

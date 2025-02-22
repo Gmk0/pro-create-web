@@ -13,26 +13,26 @@ use function Livewire\Volt\{state};
     Contact Area
     ==============================-->
   <div class="space-top space-extra-bottom">
-    <div class="container">
-        <div class="flex-row-reverse row gy-40">
-            <div class="col-lg-6 col-xl-7">
+    <div class="container px-6 md:px-10">
+        <div class="flex flex-col gap-40 md:flex-row-reverse">
+            <div class="col-lg-6 lg:w-6/12 col-xl-7">
                 <form action="mail.php" method="POST" class="contact-form input-smoke ajax-contact">
-                    <div class="row">
-                        <div class="form-group col-md-6">
+                    <div class="flex flex-col gap-4 ">
+                        <div class="flex justify-between form-group">
                             <input type="text" class="form-control" name="name" id="name" placeholder="Votre Nom">
-                            <i class="fal fa-user"></i>
+                            <i class="px-2 fal fa-user"></i>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group ">
                             <input type="email" class="form-control" name="email" id="email"
                                 placeholder="Adresse Email">
                             <i class="fal fa-envelope"></i>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                             <input type="tel" class="form-control" name="number" id="number"
                                 placeholder="Numéro de Téléphone">
                             <i class="fal fa-phone"></i>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                             <select name="subject" id="subject" class="form-select nice-select">
                                 <option value="" disabled selected hidden>Sélectionner un Service</option>
                                 <option value="Développement Web">Développement Web</option>
@@ -41,12 +41,12 @@ use function Livewire\Volt\{state};
                                 <option value="Services Cloud">Services Cloud</option>
                             </select>
                         </div>
-                        <div class="form-group col-12">
+                        <div class="form-group ">
                             <textarea name="message" id="message" cols="30" rows="3" class="form-control"
                                 placeholder="Votre Message"></textarea>
                             <i class="fal fa-pencil"></i>
                         </div>
-                        <div class="form-btn col-12">
+                        <div class="flex items-center justify-center form-btn col-12">
                             <button class="th-btn">Envoyer le Message</button>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ use function Livewire\Volt\{state};
     <!--==============================
     Map Area
     ==============================-->
-    <div class=" d-none space-bottom">
+    <div class="hidden px-6 space-bottom">
         <div class="container">
             <div class="contact-map">
                 <iframe

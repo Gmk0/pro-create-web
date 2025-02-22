@@ -21,19 +21,19 @@ with(fn() => [
 
 
 
-<div class="overflow-hidden bg-white space">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4">
-                <div class="text-center title-area mb-50 text-md-start">
+<div class="px-6 mb-6 overflow-hidden bg-white space">
+    <div class="container max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row ">
+            <div class="w-auto md:w-4/12">
+                <div class="text-center title-area md:text-start">
                     <span class="sub-title style1">Études de cas</span>
-                    <h2 class="sec-title">Nos projets qui inspirent confiance</h2>
+                    <h2 class="text-2xl font-semibold sec-title">Nos projets qui inspirent confiance</h2>
                 </div>
                 <div class="project-btn">
                     <a href="{{route('project')}}" class="th-btn blue-border">Voir tous les projets</a>
                 </div>
             </div>
-            <div class="col-xl-8">
+            <div class="w-auto md:w-8/12">
                 <div class="slider-area project-slider2">
                     <div class="swiper th-slider has-shadow" id="projectSlider1"
                         data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"}}}'>

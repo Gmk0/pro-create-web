@@ -10,9 +10,9 @@ state(['service' => null]);
 mount(function ($slug) {
 $this->service = Service::where('slug', $slug)->first();
 
-if (is_null($this->service)) {
-return redirect()->route('home');
-}
+    if (is_null($this->service)) {
+    return redirect()->route('home');
+    }
 
 });
 
@@ -33,15 +33,29 @@ with(fn() => [
     Service Area
 ==============================-->
 <section class="space-top space-extra-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-xxl-8 col-lg-8">
+
+
+    <div class="container px-8">
+        <div class="grid w-full grid-cols-12 gap-4">
+
+            <div class="col-span-8">
                 <div class="mb-0 page-single">
+
                     <div class="page-img th-anim">
 
 
-
+                        @empty(!$service->media)
                         <img src="{{$service->media[1]->getUrl()}}" alt="{{$service->media[1]->name}}">
+
+                        @endempty
+
+
+
+
+
+
+
+
 
 
 
@@ -49,19 +63,20 @@ with(fn() => [
 
 
                     </div>
+
                     <div class="page-content">
                         <h4 class="sec-title page-title">{{$service->title}}</h4>
 
                         <article id="article">
                                 {!! tiptap_converter()->asHTML($service->content) !!}
-                            </article>
+                     </article>
 
 
 
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-4 col-lg-4">
+            <div class="col-span-4">
                 <aside class="sidebar-area">
                     <div class="widget widget_categories style2 ">
                         <h3 class="widget_title">Tout les services</h3>

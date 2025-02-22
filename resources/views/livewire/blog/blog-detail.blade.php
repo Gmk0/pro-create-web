@@ -9,11 +9,14 @@ new class extends Component {
 
     public  $blog;
     public $categories;
+    public $othersBlog;
     public function mount($category,$slug)
     {
         $this->blog=Blog::findBySlug($slug);
 
         $this->categories=\App\Models\Category::all();
+
+        $this->othersBlog=Blog::where('slug','!=',$slug)->latest()->take(3)->get();
 
         if($this->blog==null)
         {
@@ -33,9 +36,9 @@ new class extends Component {
         Blog Area
     ==============================-->
 <section class="th-blog-wrapper blog-details space-top space-extra-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-xxl-8 col-lg-7">
+    <div class="container px-6 md:px-10 ">
+        <div class="flex flex-col grid-cols-12 gap-4 md:grid">
+            <div class="lg:col-span-7 xl:col-span-8">
                 <div class="th-blog blog-single">
                     @php
                     $media = $blog->getMedia('blog');
@@ -68,7 +71,7 @@ new class extends Component {
                         <h2 class="blog-title">{{$blog->title}} </h2>
 
 
-                        <article id="article">
+                        <article class="prose">
                             {!! tiptap_converter()->asHTML($blog->content) !!}
                         </article>
 
@@ -247,7 +250,7 @@ new class extends Component {
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-4 col-lg-5">
+            <div class="xl:col-span-4 lg:col-span-5">
                 <aside class="sidebar-area">
                     <div class="widget widget_search ">
                         <form class="search-form">
@@ -256,47 +259,28 @@ new class extends Component {
                         </form>
                     </div>
                     <div class="widget ">
-                        <h3 class="widget_title">Latest Posts</h3>
+                        <h3 class="widget_title">Derniers Posts</h3>
                         <div class="recent-post-wrap">
+
+                            @forelse ($othersBlog as $blog)
                             <div class="recent-post">
                                 <div class="media-img">
-                                    <a href="blog-details.html"><img src="/assets/img/blog/recent-post-1-1.jpg"
-                                            alt="Blog Image"></a>
+                                    <a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}">
+                                        <img src="{{$blog->getFirstMediaUrl("blog")}}" alt="Blog Image"></a>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Rapidio
-                                            monetize wherea competitive good time</a></h4>
+                                    <h4 class="post-title"><a class="text-inherit" href="blog-details.html">{{$blog->title}}</a></h4>
                                     <div class="recent-post-meta">
-                                        <a href="blog.html">24 Jun , 2024</a>
+                                        <a href="{{ route('blog.detail',['category'=>$blog->category->slug,'slug'=>$blog->slug]) }}">{{$blog->published_at}}</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="recent-post">
-                                <div class="media-img">
-                                    <a href="blog-details.html"><img src="/assets/img/blog/recent-post-1-2.jpg"
-                                            alt="Blog Image"></a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Top 5 IT
-                                            Solutions for Small Businesses Startup</a></h4>
-                                    <div class="recent-post-meta">
-                                        <a href="blog.html">22 Jun , 2024</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="recent-post">
-                                <div class="media-img">
-                                    <a href="blog-details.html"><img src="/assets/img/blog/recent-post-1-3.jpg"
-                                            alt="Blog Image"></a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="post-title"><a class="text-inherit" href="blog-details.html">The Benefits
-                                            of Managed IT Services post could</a></h4>
-                                    <div class="recent-post-meta">
-                                        <a href="blog.html">23 Jun , 2024</a>
-                                    </div>
-                                </div>
-                            </div>
+
+                            @empty
+
+                            @endforelse
+
+
                         </div>
                     </div>
                     <div class="widget widget_categories ">
@@ -315,7 +299,7 @@ new class extends Component {
                         </ul>
                     </div>
                     <div class="widget ">
-                        <h3 class="widget_title">Project Gallery</h3>
+                        <h3 class="widget_title">Blog Gallerie</h3>
                        @if ($media->isNotEmpty())
                     <div class="sidebar-gallery">
                         @foreach ($media as $image)

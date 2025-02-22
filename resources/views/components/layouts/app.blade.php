@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
 
         <meta name="author" content="Webtek">
         <meta name="description" content="Webtek - IT Solution and Technology HTML Template">
@@ -49,12 +49,10 @@
             	    All CSS File
             	============================== -->
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+
         <!-- Fontawesome Icon -->
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
-            integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="/css/awcodes/tiptap-editor/tiptap.css">
 
 
@@ -69,7 +67,11 @@
         <link
          rel="stylesheet" href="/assets/css/style.css">
 
+
+
          <link rel="stylesheet" href="/assets/css/stylescss.css">
+
+         @vite(['resources/css/app.css','resources/js/app.js'])
 
          @livewireStyles
 
@@ -78,7 +80,7 @@
 
         <title>{{ $title ?? 'Pro create - IT Solution' }}</title>
     </head>
-    <body class="gr-bg1">
+    <body class="gr-bg1 ">
 
         <!--[if lte IE 9]>
             	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>

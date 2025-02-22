@@ -7,12 +7,12 @@ use function Livewire\Volt\{state};
 ?>
 
 <div class="footer-wrapper footer-layout3">
-    <div class="container">
+    <div class="container px-8">
         <!-- Newsletter Section -->
         <div class="footer-top">
-            <div class="row gx-0 align-items-center">
-                <div class="col-xl">
-                    <div class="footer-newsletter">
+            <div class="w-full">
+                <div class="">
+                    <div class="flex flex-col items-center justify-between md:flex-row footer-newsletter">
                         <div class="footer-newsletter-content">
                             <h2 class="newsletter-title">Inscrivez-vous pour recevoir nos mises à jour</h2>
                         </div>
@@ -29,9 +29,9 @@ use function Livewire\Volt\{state};
         <!-- Footer Widgets -->
         <div class="widget-area">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="flex flex-col justify-between md:flex-row">
                     <!-- About Section -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="w-auto md:w-6/12 lg:w-3/12 ">
                         <div class="widget footer-widget">
                             <h3 class="widget_title">À propos de nous</h3>
                             <div class="th-widget-about">
@@ -49,7 +49,7 @@ use function Livewire\Volt\{state};
                     </div>
 
                     <!-- Contact Information -->
-                    <div class="col-md-6 col-lg-auto">
+                    <div class="w-auto md:w-6/12">
                         <div class="widget footer-widget">
                             <h3 class="widget_title">Contactez-nous</h3>
                             <div class="th-widget-about">
@@ -67,7 +67,7 @@ use function Livewire\Volt\{state};
                     </div>
 
                     <!-- Quick Links -->
-                    <div class="col-md-6 col-lg-auto">
+                    <div class="w-auto md:w-6/12">
                         <div class="widget widget_nav_menu footer-widget">
                             <h3 class="widget_title">Liens rapides</h3>
                             <div class="menu-all-pages-container">
@@ -82,7 +82,7 @@ use function Livewire\Volt\{state};
                     </div>
 
                     <!-- App Download -->
-                    <div class="col-md-6 col-lg-auto d-none">
+                    <div class="hidden col-md-6 col-lg-auto">
                         <div class="widget widget_offer footer-widget">
                             <h3 class="widget_title">Téléchargez notre application</h3>
                             <div class="download-btn-wrap">
@@ -105,12 +105,12 @@ use function Livewire\Volt\{state};
 
         <!-- Copyright Section -->
         <div class="copyright-wrap">
-            <div class="row gy-2 align-items-center">
-                <div class="col-lg-6">
+            <div class="flex flex-col items-center md:flex-row gy-2">
+                <div class="lg:w-6/12">
                     <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a
                             href="/">PRO-CREATE</a>. Tous droits réservés.</p>
                 </div>
-                <div class="text-center col-lg-6 text-md-end">
+                <div class="text-center lg:w-6/12 md:text-end">
                     <ul class="footer-menu">
                         <li><a href="{{route('services')}}">Services</a></li>
                         <li><a href="{{route('about')}}">À propos</a></li>
@@ -121,9 +121,8 @@ use function Livewire\Volt\{state};
             </div>
         </div>
     </div>
-    <div class="shape-mockup" data-top="0%" data-left="0%"><img src="/assets/img/shape/footer_shape_1.png" alt="shape">
-</div>
-    <div class="shape-mockup d-none d-xl-block" data-top="0%" data-right="0%"><img
+    <div class="shape-mockup" data-top="0%" data-left="0%"><img src="/assets/img/shape/footer_shape_1.png" alt="shape"></div>
+        <div class="shape-mockup d-none d-xl-block" data-top="0%" data-right="0%"><img
             src="/assets/img/shape/footer_shape_2.png" alt="shape">
         </div>
-    </div>
+</div>

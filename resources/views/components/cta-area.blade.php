@@ -1,6 +1,5 @@
-
-<section class="bg-white space-bottom">
-    <div class="container">
+<section class="mt-6 bg-white space-bottom">
+    <div class="container max-w-5xl px-4 mx-auto md:px-0">
         <div class="text-center cta-area2 th-radius3" data-bg-src="/assets/img/about_us/contact_us.png">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">

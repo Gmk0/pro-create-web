@@ -16,7 +16,7 @@ with(fn() => [
 
 <section class="bg-auto space background-image arrow-wrap shape-mockup-wrap"
     style="background-image: url(/assets/img/bg/testi-other_bg_2.png);">
-    <div class="container">
+    <div class="container px-8">
         <div class="text-center title-area">
             <span class="sub-title">
                 <div class="icon-masking me-2">
@@ -40,13 +40,13 @@ with(fn() => [
                         <div class="testi-other-box">
                             <div class="testi-other-box_img">
                                 <img src="{{Storage::url($testimonial->image)}}" alt="Client 1">
-                                <div class="testi-other-box_quote"><img src="/assets/img/icon/quote_left_2.svg"
+                                <div class="flex items-center justify-center testi-other-box_quote"><img src="/assets/img/icon/quote_left_2.svg"
                                         alt="quote"></div>
                             </div>
-                            <div class="testi-other-box_content">
+                            <div class="flex flex-col testi-other-box_content">
                                 <p class="testi-other-box_text">{{$testimonial->content}}
                                 </p>
-                                <div class="testi-other-box_review">
+                                <div class="hidden testi-other-box_review">
                                     <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
                                     <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
                                     <i class="fa-solid fa-star-sharp"></i>
@@ -120,10 +120,10 @@ with(fn() => [
     </div>
 
     <!-- Éléments décoratifs -->
-    <div class="shape-mockup moving d-none d-xl-block" style="bottom: 0%; left: 10%;">
+    <div class="shape-mockup moving " style="bottom: 0%; left: 10%;">
         <img src="/assets/img/shape/line_1.png" alt="shape">
     </div>
-    <div class="shape-mockup jump d-none d-xl-block" style="top: 20%; right: 2%;">
+    <div class="shape-mockup jump k" style="top: 20%; right: 2%;">
         <img src="/assets/img/shape/line_2.png" alt="shape">
     </div>
 </section>

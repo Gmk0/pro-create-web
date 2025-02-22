@@ -39,6 +39,4 @@ Volt::route('/services', 'service.service-all-page')->name('services');
 });
 
 
-
-
-
+Route::view('/test','test');

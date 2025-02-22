@@ -7,7 +7,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container max-w-6xl px-6 mx-auto">
 
         <div class="choose-tabs-wrapper">
             <div class="nav nav-tabs choose-tabs-tabs" id="nav-tab" role="tablist">
@@ -25,7 +25,7 @@
                 <div class="tab-pane fade show active" id="nav-step1" role="tabpanel">
                     <div class="choose-wrapper">
                         <div class="choose-content">
-                            <div class="title-area mb-30">
+                            <div class="title-area ">
                                 <h5 class="mb-3 text-white sec-title">Expertise et Expérience</h5>
                                 <p class="box-text">Nous apportons des années d'expérience dans la digitalisation,
                                     avec une équipe d'experts dédiés à la réussite de votre projet.</p>
@@ -48,7 +48,7 @@
                 <div class="tab-pane fade" id="nav-step2" role="tabpanel">
                     <div class="choose-wrapper">
                         <div class="choose-content">
-                            <div class="title-area mb-30">
+                            <div class="title-area">
                                 <h5 class="mb-3 text-white sec-title">Qualité de Service</h5>
                                 <p class="box-text">Nos services sont conçus pour répondre aux standards les plus
                                     élevés de qualité et d'efficacité.</p>
@@ -71,7 +71,7 @@
                 <div class="tab-pane fade" id="nav-step3" role="tabpanel">
                     <div class="choose-wrapper">
                         <div class="choose-content">
-                            <div class="title-area mb-30">
+                            <div class="title-area">
                                 <h5 class="mb-3 text-white sec-title">Engagement et Sécurité</h5>
                                 <p class="box-text">Nous nous engageons à protéger vos données et à vous fournir un
                                     environnement digital sécurisé.</p>
@@ -94,7 +94,7 @@
                 <div class="tab-pane fade" id="nav-step4" role="tabpanel">
                     <div class="choose-wrapper">
                         <div class="choose-content">
-                            <div class="title-area mb-30">
+                            <div class="title-area">
                                 <h5 class="mb-3 text-white sec-title">Fiabilité et Innovation</h5>
                                 <p class="box-text">Nous utilisons des technologies innovantes pour offrir des
                                     solutions durables et adaptées à votre croissance.</p>
@@ -106,7 +106,7 @@
                                     <li>Partenaire de confiance</li>
                                 </ul>
                             </div>
-                            <a href="contact.html" class="th-btn style5">Découvrir nos services</a>
+                            <a href="contact.html" class="th-btn style5"> nos services</a>
                         </div>
                         <div class="choose-image th-anim">
                             <img src="/assets/img/about_us/innovation.png" alt="Innovation">

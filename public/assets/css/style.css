@@ -123,6 +123,7 @@ body {
 
 
 
+/*
 
 body {
   font-family: var(--body-font);
@@ -134,7 +135,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
+ */
 iframe {
   border: none;
   width: 100%;
@@ -2143,7 +2144,7 @@ textarea.is-invalid {
 .sub-title {
   position: relative;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   font-family: var(--title-font);
   letter-spacing: 0.7px;
@@ -6261,7 +6262,7 @@ ol.wp-block-rss {
 
 @media (max-width: 1299px) {
   .header-button .th-btn {
-    display: none;
+
   }
 }
 
@@ -6761,7 +6762,7 @@ header {
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.36);
-  padding: 3px 0;
+
 }
 
 .header-layout4 .main-menu > ul > li > a {

@@ -1,3 +1,23 @@
+
+@import "bootstrapcustom.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.sub-title-custom{
+    @apply text-lg font-semibold text-blue-400
+}
+
+.newsletter-title{
+
+    @apply text-2xl font-medium
+
+}
+.text-b{
+
+    font-size: 14px;
+    line-height: 26px;
+}

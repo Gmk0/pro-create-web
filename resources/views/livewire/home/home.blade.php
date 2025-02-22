@@ -10,20 +10,30 @@ use function Livewire\Volt\{state};
 
    <x-hero-wrap />
   <x-investissement />
-    <x-about-area />
+  <x-about-area />
+  <livewire:service.service-area>
 
-    <livewire:service.service-area>
-
-    <x-about-service-area />
-
-    <livewire:project.project-area>
-
-        <livewire:service.brand-area>
-
+  <x-about-service-area />
+  <livewire:project.project-area>
     <x-cta-area />
 
     <livewire:service.collaboration-area>
 
     <livewire:blog.blog-area>
+
+  {{--
+
+
+
+
+
+
+        <livewire:service.brand-area>
+
+
+
+
+
+    <livewire:blog.blog-area>--}}
 
 </div>

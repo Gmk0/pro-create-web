@@ -12,9 +12,9 @@ use function Livewire\Volt\{state};
 
 
     <div class="overflow-hidden bg-white about-area4 space" id="about-sec">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6">
+        <div class="container px-6 lg:px-10">
+            <div class="flex flex-col md:flex-row align-items-center">
+                <div class=" md:w-1/2">
                     <div class="img-box1">
                         <div class="img1 th-anim global-img">
                             <img src="assets/img/normal/about_1.jpg" alt="Équipe Pro Create">
@@ -25,9 +25,9 @@ use function Livewire\Volt\{state};
                         <div class="about-shape"></div>
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="about-content-area ps-xl-4 ms-xl-2">
-                        <div class="title-area mb-35">
+                <div class="md:w-1/2">
+                    <div class="about-content-area lg:ps-4 lg:ms-2">
+                        <div class="mb-8 title-area">
                             <span class="sub-title">À propos de Pro Create</span>
                             <h2 class="sec-title">Transformez votre entreprise avec nos solutions digitales</h2>
                             <p>
@@ -74,7 +74,7 @@ use function Livewire\Volt\{state};
                                 à la pointe de la technologie, tout en garantissant une expérience utilisateur fluide et efficace.
                             </p>
                         </div>
-                        <div class="mt-40 btn-group justify-content-start">
+                        <div class="flex justify-start mt-6 btn-group">
 
                             <a href="/contact" class="th-btn ">Nous contacter</a>
                         </div>
@@ -88,9 +88,9 @@ use function Livewire\Volt\{state};
     ==============================-->
    <div class="bg-theme">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                <div class="counter-card style2">
+        <div class="gap-4 md:grid md:grid-cols-12 row">
+            <div class="sm:col-span-6 xl:col-span-3 counter-card-wrap style2">
+                <div class="flex items-center justify-center md:block counter-card style2">
                     <div class="box-icon">
                         <img src="assets/img/icon/counter_card_2_1.svg" alt="Icône">
                     </div>
@@ -100,8 +100,8 @@ use function Livewire\Volt\{state};
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                <div class="counter-card style2">
+            <div class=" sm:col-span-6 xl:col-span-3 counter-card-wrap style2">
+                <div class="flex items-center justify-center counter-card md:block style2">
                     <div class="box-icon">
                         <img src="assets/img/icon/counter_card_2_2.svg" alt="Icône">
                     </div>
@@ -111,8 +111,8 @@ use function Livewire\Volt\{state};
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                <div class="counter-card style2">
+            <div class="sm:col-span-6 xl:col-span-3 counter-card-wrap style2">
+                <div class="flex items-center justify-center counter-card style2 md:block">
                     <div class="box-icon">
                         <img src="assets/img/icon/counter_card_2_3.svg" alt="Icône">
                     </div>
@@ -122,8 +122,8 @@ use function Livewire\Volt\{state};
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xl-3 counter-card-wrap style2">
-                <div class="counter-card style2">
+            <div class="sm:col-span-6 xl:col-span-3 counter-card-wrap style2">
+                <div class="flex items-center justify-center counter-card style2 md:block">
                     <div class="box-icon">
                         <img src="assets/img/icon/counter_card_2_4.svg" alt="Icône">
                     </div>
@@ -162,7 +162,7 @@ use function Livewire\Volt\{state};
     <!--==============================
     Team Area
     ==============================-->
-    <section class="team-area d-none">
+    <section class="hidden team-area">
         <div class="container z-index-common">
             <div class="row justify-content-lg-between justify-content-center align-items-end">
                 <div class="col-xxl-4 col-xl-6">
