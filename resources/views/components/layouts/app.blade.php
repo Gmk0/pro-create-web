@@ -108,7 +108,7 @@
         {{ $slot }}
 
 
-        <livewire:footer.footer-area />
+        {{--<livewire:footer.footer-area />--}}
 
         <!-- Scroll To Top -->
            <x-scroll-top />
